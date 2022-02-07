@@ -1,16 +1,114 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
 html,
 body {
   padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  margin: 10px;
+  background-color: #2A353E;
+  font-weight: 400;
+  font-family: Livvic, Inter, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
 }
 
 * {
   box-sizing: border-box;
+}
+
+a {
+  color: #4BDBEA;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+textbtn:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+h1{
+  font-family: Livvic;
+  font-size: 48px;
+  font-weight: 700;
+}
+h2{
+  font-family: Livvic;
+  font-size: 36px;
+  font-weight: 700;
+}
+p{
+  font-family: Inter;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../public/fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Livvic';
+  src: url('../public/fonts/Livvic-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Livvic';
+  src: url('../public/fonts/Livvic-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Livvic';
+  src: url('../public/fonts/Livvic-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Livvic';
+  src: url('../public/fonts/Livvic-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Livvic';
+  src: url('../public/fonts/Livvic-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Livvic';
+  src: url('../public/fonts/Livvic-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Livvic';
+  src: url('../public/fonts/Livvic-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Livvic';
+  src: url('../public/fonts/Livvic-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
 }

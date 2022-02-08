@@ -4,7 +4,7 @@ export default function Language({ selected, onSelect }) {
   const classDefault = "p-2 font-light";
 
   return (
-    <div className="flex flex-row items-center justify-center text-sm space-x-2 h-6 my-8">
+    <div className="flex flex-row items-center justify-center text-sm space-x-2 h-6">
       <textbtn
         onClick={() => {
           if (selected != "English") onSelect("English");

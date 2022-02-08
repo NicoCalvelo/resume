@@ -1,14 +1,14 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-@import url('https://fonts.googleapis.com/css?family=Inter');
+@import url("https://fonts.googleapis.com/css?family=Inter");
 
 html,
 body {
   padding: 0;
   margin: 10px;
-  background-color: #2A353E;
+  background-color: #2a353e;
   font-weight: 400;
   font-family: Livvic, Inter, sans-serif;
   line-height: 1.6;
@@ -20,7 +20,7 @@ body {
 }
 
 a {
-  color: #4BDBEA;
+  color: #4bdbea;
   text-decoration: none;
   text-decoration: underline;
 }
@@ -29,7 +29,7 @@ a:hover {
   cursor: pointer;
 }
 
-textbtn:hover{
+textbtn:hover {
   cursor: pointer;
   text-decoration: underline;
 }
@@ -38,77 +38,99 @@ img {
   max-width: 100%;
   display: block;
 }
-h1{
+h1 {
   font-family: Livvic;
   font-size: 48px;
   font-weight: 700;
 }
-h2{
+h2 {
   font-family: Livvic;
   font-size: 36px;
   font-weight: 700;
 }
-p{
+h3 {
+  font-family: Livvic;
+  font-size: 64px;
+  font-weight: 700;
+  vertical-align: middle;
+  padding-left: 2px;
+  color: #2a353e;
+  text-shadow: -1px -1px 0 #EB784B, 1px -1px 0 #EB784B, -1px 1px 0 #EB784B, 1px 1px 0 #EB784B;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+p {
   font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+@layer components {
+  /* Button Styles */
+  .small-btn-green {
+    @apply text-center px-3 py-2 cursor-pointer rounded-xl leading-5 text-xs font-semibold text-white bg-palette-green focus:outline-none focus:ring-2 focus:ring-palette-green appearance-none transition;
+  }
+  .action-btn {
+    @apply text-palette-green border shadow-lg hover:shadow-xl text-sm border-palette-green text-center mb-5 mt-4 rounded py-1.5 px-4 cursor-pointer focus:outline-none focus:ring-2 focus:ring-green-300 ring-opacity-20 appearance-none;
+  }
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('../public/fonts/Inter-Regular.ttf') format('truetype');
+  font-family: "Inter";
+  src: url("../public/fonts/Inter-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Livvic';
-  src: url('../public/fonts/Livvic-Light.ttf') format('truetype');
+  font-family: "Livvic";
+  src: url("../public/fonts/Livvic-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Livvic';
-  src: url('../public/fonts/Livvic-LightItalic.ttf') format('truetype');
+  font-family: "Livvic";
+  src: url("../public/fonts/Livvic-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic;
 }
-
 @font-face {
-  font-family: 'Livvic';
-  src: url('../public/fonts/Livvic-Regular.ttf') format('truetype');
+  font-family: "Livvic";
+  src: url("../public/fonts/Livvic-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Livvic';
-  src: url('../public/fonts/Livvic-Italic.ttf') format('truetype');
+  font-family: "Livvic";
+  src: url("../public/fonts/Livvic-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Livvic';
-  src: url('../public/fonts/Livvic-Medium.ttf') format('truetype');
+  font-family: "Livvic";
+  src: url("../public/fonts/Livvic-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Livvic';
-  src: url('../public/fonts/Livvic-SemiBold.ttf') format('truetype');
+  font-family: "Livvic";
+  src: url("../public/fonts/Livvic-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Livvic';
-  src: url('../public/fonts/Livvic-SemiBoldItalic.ttf') format('truetype');
+  font-family: "Livvic";
+  src: url("../public/fonts/Livvic-SemiBoldItalic.ttf") format("truetype");
   font-weight: 600;
   font-style: italic;
 }
-
 @font-face {
-  font-family: 'Livvic';
-  src: url('../public/fonts/Livvic-Bold.ttf') format('truetype');
+  font-family: "Livvic";
+  src: url("../public/fonts/Livvic-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }

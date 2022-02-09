@@ -2,22 +2,7 @@ import Image from "next/image";
 import { useEffect } from "react";
 import styles from "./about.module.scss";
 
-const skills = [
-  "Javascript",
-  "React",
-  "Next.js",
-  "Gatsby",
-  "Flutter",
-  "Unity3D",
-  "C#",
-  "CSS",
-  "Tailwind",
-  "Databases",
-  "Webhooks",
-  "APIs",
-  "Analytics",
-  "Payments",
-];
+const frameworks = ["Javascript", "React", "Next.js", "Flutter", "Unity3D", "C#", "CSS", "Tailwind"];
 
 export default function AboutMe({ language }) {
   useEffect(() => {
@@ -37,7 +22,7 @@ export default function AboutMe({ language }) {
   return (
     <>
       <div className="h-36" />
-      <div className="flex-col space-y-20 my-36">
+      <div className="flex-col space-y-10 my-36">
         <div id="h3" className="flex flex-row items-center space-x-4 px-4">
           <h3>About me</h3>
           <div className="h-0.25 flex-grow bg-palette-orange" />
@@ -73,10 +58,10 @@ export default function AboutMe({ language }) {
                 we communicate and some crypto experiences. An app for a local gym. A mobile game based in my hometown.
                 A web app to change how we communicate and some crypto experiences.
               </p>
-              <ul className="grid text-sm font-bold tracking-wider gap-2 grid-cols-3">
-                {skills.map((e) => {
+              <ul className="grid leading-snug text-sm font-bold tracking-wider gap-2 grid-cols-3">
+                {frameworks.map((e) => {
                   return (
-                    <li className="flex flex-row items-center space-x-2">
+                    <li id={frameworks.indexOf(e).toString()} className="flex flex-row items-center space-x-2">
                       <svg width="7" height="9" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.375 11.5L0.624999 22.3253L0.625 0.674682L19.375 11.5Z" fill="#EB784B" />
                       </svg>
@@ -89,6 +74,38 @@ export default function AboutMe({ language }) {
           </div>
         </div>
       </div>
+      <div className="h-10" />
+      <Skills language={language} />
     </>
+  );
+}
+
+//Skills section
+function Skills({ language }) {
+  return (
+    <div className="flex items-start space-x-4 justify-center">
+      <ul className="flex flex-col text-center flex-wrap mr-4" id="tabVertical" role="tablist">
+        <li className="flex-grow mb-2" role="presentation">
+          <button className="btn-orange-selected">Product Manager</button>
+        </li>
+        <li className="flex-grow mb-2" role="presentation">
+          <button className="btn-orange-deselected">Back-end</button>
+        </li>
+        <li className="flex-grow mb-2" role="presentation">
+          <button className="btn-orange-deselected">Front-end</button>
+        </li>
+        <li className="flex-grow mb-2" role="presentation">
+          <button className="btn-orange-deselected">Game dev</button>
+        </li>
+      </ul>
+      <div className="leading-snug space-y-4 max-w-xl mx-10">
+        <h4>I’m developing as a product manager.</h4>
+        <p>
+          An app for a local gym. A mobile game based in my hometown. A web app to change how we communicate and An app
+          for a local gym. A mobile game based in my hometown. A web app to change how we communicate and some An app
+          for a local gym. A mobile game based in my hometown. A web app to change how we communicate and some
+        </p>
+      </div>
+    </div>
   );
 }

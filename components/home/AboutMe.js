@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import styles from "./about.module.scss";
 
 const frameworks = ["Javascript", "React", "Next.js", "Flutter", "Unity3D", "C#", "CSS", "Tailwind"];
@@ -80,25 +80,36 @@ export default function AboutMe({ language }) {
   );
 }
 
+const skillsButtons = {
+  English: ["Product Manager", "Back-end", "Front-end", "Game dev"],
+  Spanish: ["Manager de Producto,", "Back-end", "Front-end", "Desarrollo de juegos"],
+  French: ["Gestionnaire de produits", "Back-end", "Front-end", "Développement de jeux"],
+};
+
+const skillsTexts = {
+  English: [],
+  Spanish: [],
+  French: [],
+};
+
 //Skills section
 function Skills({ language }) {
+const [selected, setSelected] = useState(0);
+
   return (
     <div className="flex items-start space-x-4 justify-center">
-      <ul className="flex flex-col text-center flex-wrap mr-4" id="tabVertical" role="tablist">
-        <li className="flex-grow mb-2" role="presentation">
-          <button className="btn-orange-selected">Product Manager</button>
-        </li>
-        <li className="flex-grow mb-2" role="presentation">
-          <button className="btn-orange-deselected">Back-end</button>
-        </li>
-        <li className="flex-grow mb-2" role="presentation">
-          <button className="btn-orange-deselected">Front-end</button>
-        </li>
-        <li className="flex-grow mb-2" role="presentation">
-          <button className="btn-orange-deselected">Game dev</button>
-        </li>
+      <ul className="flex flex-col text-center space-y-2 flex-wrap mr-4" id="tabVertical" role="tablist">
+        {[0,1,2,3].map((e) => {
+          return (
+            <li id={e.toString()} className="flex-grow" role="presentation">
+              <button className={selected === e ?"btn-orange-selected" :"btn-orange-deselected"}
+                onClick={() => setSelected(e)}
+              >{skillsButtons[language][e]}</button>
+            </li>
+          );
+        })}
       </ul>
-      <div className="leading-snug space-y-4 max-w-xl mx-10">
+      <div className="leading-snug space-y-4 max-w-xl py-3 mx-10">
         <h4>I’m developing as a product manager.</h4>
         <p>
           An app for a local gym. A mobile game based in my hometown. A web app to change how we communicate and An app

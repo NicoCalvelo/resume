@@ -8,7 +8,6 @@ import Header from "../components/home/Header";
 import Interests from "../components/home/Interests";
 import Language from "../components/home/Language";
 import NavBar from "../components/home/Navbar";
-import Skills from "../components/home/Skills";
 
 const name = "Nico";
 const siteTitle = "Nico Calvelo";
@@ -42,7 +41,6 @@ export default function Home() {
         />
         <Header language={language} />
         <AboutMe language={language} />
-        <Skills language={language} />
         <Interests language={language} />
         <Experience language={language} />
       </div>

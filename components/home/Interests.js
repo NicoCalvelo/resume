@@ -84,14 +84,7 @@ const getSvg = (n) => {
 
 export default function Interests({ language }) {
   return (
-    <>
-      <div className="h-20" />
-      <div className="flex flex-row space-x-4 items-center mx-10">
-        <div className="h-0.25 flex-grow bg-palette-dark-green" />
-        <h4 className="text-palette-dark-green uppercase"> Know me better</h4>
-        <div className="h-0.25 flex-grow bg-palette-dark-green" />
-      </div>
-      <div className="flex flex-row justyfy-between items-center space-x-10 mx-16">
+      <div className="flex flex-row justyfy-between items-center py-10 space-x-10 mx-16">
         {[0, 1, 2].map((element) => {
           return (
             <div className="flex flex-row w-2/6 space-x-2 items-center">
@@ -102,13 +95,13 @@ export default function Interests({ language }) {
                 </p>
               </div>
               <div className="flex flex-col flex-grow space-y-1.5 text-sm text-palette-grey-blue font-light tracking-wide">
-                <div className={"border border-palette-dark-green rounded px-4 py-.5 " + margins[element][0]}>
+                <div className={"border border-palette-orange border-opacity-50 rounded px-4 py-.5 " + margins[element][0]}>
                   {InterestsList[language][element]["list"][0]}
                 </div>
-                <div className={"border border-palette-dark-green rounded px-4 py-.5 " + margins[element][1]}>
+                <div className={"border border-palette-orange border-opacity-50 rounded px-4 py-.5 " + margins[element][1]}>
                   {InterestsList[language][element]["list"][1]}
                 </div>
-                <div className={"border border-palette-dark-green rounded px-4 py-.5 " + margins[element][2]}>
+                <div className={"border border-palette-orange border-opacity-50 rounded px-4 py-.5 " + margins[element][2]}>
                   {InterestsList[language][element]["list"][2]}
                 </div>
               </div>
@@ -116,6 +109,5 @@ export default function Interests({ language }) {
           );
         })}
       </div>
-    </>
   );
 }

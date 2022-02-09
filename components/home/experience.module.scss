@@ -1,8 +1,25 @@
+.textBlink{
+  position: relative;
+  animation: blink 0.7s ease;
+}
+
+@keyframes blink {
+  0%{
+    opacity: 0;
+    top: -20px;
+  }
+  50%,
+  100%{
+    opacity: 1;
+    top: 0px;
+  }
+}
+
 .reveal {
     overflow-x: hidden;
     position: relative;
     animation-name: reveal-text;
-    text-shadow: -1px -1px 0 #E7EB2F, 1px -1px 0 #E7EB2F, -1px 1px 0 #E7EB2F, 1px 1px 0 #E7EB2F;
+    text-shadow: -1px -1px 0 #FFEC40, 1px -1px 0 #FFEC40, -1px 1px 0 #FFEC40, 1px 1px 0 #FFEC40;
   
     &:after {
       content: "";
@@ -27,7 +44,7 @@
       animation-fill-mode: both;
       animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
     } &:after {
-        background-color: #E7EB2F;
+        background-color: #FFEC40;
       }
      
   }

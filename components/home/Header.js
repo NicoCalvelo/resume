@@ -42,9 +42,9 @@ export default function Header({ language }) {
         </div>
         <div className="leading-snug">
           <div className={styles.outer}>
-            <h2 className={styles.text}>{texts[language][1]}</h2>
+            <h2 >{texts[language][1]}</h2>
             <div className={styles.inner}>
-              <h2 className={styles.text}>{texts[language][1]}</h2>
+              <h2 className='text-palette-grey-blue'>{texts[language][1]}</h2>
             </div>
           </div>
           <div className={styles.fadeIn}>

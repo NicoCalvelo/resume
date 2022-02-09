@@ -1,5 +1,5 @@
 //Language selected could be English, Spanish or French
-export default function Language({ selected, onSelect }) {
+export default function Language({ language, onSelect }) {
   const classSelected = "p-2 font-semibold";
   const classDefault = "p-2 font-light";
 
@@ -7,27 +7,27 @@ export default function Language({ selected, onSelect }) {
     <div className="flex flex-row items-center justify-center text-sm space-x-2 h-6">
       <textbtn
         onClick={() => {
-          if (selected != "English") onSelect("English");
+          if (language != "English") onSelect("English");
         }}
-        className={selected == "English" ? classSelected : classDefault}
+        className={language == "English" ? classSelected : classDefault}
       >
         English
       </textbtn>
       <div className="bg-palette-grey-blue w-0.25 h-full" />
       <textbtn
         onClick={() => {
-          if (selected != "Spanish") onSelect("Spanish");
+          if (language != "Spanish") onSelect("Spanish");
         }}
-        className={selected == "Spanish" ? classSelected : classDefault}
+        className={language == "Spanish" ? classSelected : classDefault}
       >
         Español
       </textbtn>
       <div className="bg-palette-grey-blue w-0.25 h-full" />
       <textbtn
         onClick={() => {
-          if (selected != "French") onSelect("French");
+          if (language != "French") onSelect("French");
         }}
-        className={selected == "French" ? classSelected : classDefault}
+        className={language == "French" ? classSelected : classDefault}
       >
         Français
       </textbtn>

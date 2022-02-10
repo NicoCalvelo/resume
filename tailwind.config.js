@@ -13,6 +13,7 @@ module.exports = {
         'palette-black': '#2A353E',
         'palette-orange': '#EB784B',    
         'palette-yellow': '#FFEC40',
+        'palette-grey': '#DFDFDF',
       },
       spacing: {
         '0.25': '1px',

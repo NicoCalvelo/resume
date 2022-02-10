@@ -22,7 +22,7 @@ export default function AboutMe({ language }) {
   return (
     <>
       <div className="h-36" />
-      <div className="flex-col space-y-10 my-36">
+      <div id='orange' className="flex-col space-y-10 my-36">
         <div id="h3" className="flex flex-row items-center space-x-4 px-4">
           <h3>About me</h3>
           <div className="h-0.25 flex-grow bg-palette-orange" />

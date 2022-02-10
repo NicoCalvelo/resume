@@ -6,25 +6,25 @@ const texts = {
     "Hi, my name is",
     "Young tech-entrepreneur.",
     "An app for a local gym. A mobile game based in my hometown. A web app to change how we communicate and some crypto experiences.",
-    'Contact me',
+    'Download my formal CV',
   ],
   Spanish: [
     "Hola, me llamo",
     "Joven emprendedor en tecnología.",
     "Una aplicación para un gimnasio local. Un juego móvil basado en mi ciudad natal. Una aplicación web para cambiar la forma en que nos comunicamos y algunas experiencias crypto.",
-    'Contáctame',
+    'Descargar mi CV formal',
   ],
   French: [
     "Salut, mon nom est",
     "Jeune entrepreneur en technologie.",
     "Une application pour un gymnase local. Un jeu mobile basé dans ma ville natale. Une application web pour changer la façon dont nous communiquons et certaines expériences crypto.",
-    'contactez moi',
+    'Télécharger mon CV officiel',
   ],
 };
 
 export default function Header({ language }) {
   return (
-    <div className="flex flex-row items-center justify-between">
+    <div id='green' className="flex flex-row items-center justify-between">
       <div className="flex-col mb-20 space-y-3 w-3/5 z-10 -mr-20">
         <div className="leading-none text-palette-green">
           <div className={styles.outer}>

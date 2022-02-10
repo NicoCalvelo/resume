@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import styles from "./experience.module.scss";
 
 const buttons = {
-  English: ["Product Manager", "Back-end", "Front-end", "Game dev"],
-  Spanish: ["Manager de Producto", "Back-end", "Front-end", "Desarrollo de juegos"],
-  French: ["Gestionnaire de produits", "Back-end", "Front-end", "Développement de jeux"],
+  English: ["Product Manager", "Front-end", "Back-end", "Game dev"],
+  Spanish: ["Manager de Producto", "Front-end", "Back-end", "Desarrollo de juegos"],
+  French: ["Gestionnaire de produits", "Front-end", "Back-end", "Développement de jeux"],
 };
 
 const expTexts = {
@@ -90,25 +90,36 @@ export default function Experience({ language }) {
 
   return (
     <>
-      <div className="h-24" />
-      <div className="flex-col space-y-16 my-36">
+      <div className="h-20" />
+      <div id='yellow' className="flex-col space-y-10">
         <div id="h3yellow" className="flex flex-row items-center space-x-4 px-4">
           <div className="h-0.25 flex-grow bg-palette-yellow" />
           <h3>Experience</h3>
         </div>
-        <div className="flex items-center space-x-4 justify-between -ml-10">
-          <div className="flex flex-col text-palette-yellow text-opacity-50 items-center">
+        <div className="flex items-center space-x-2 justify-between h-72 my-20">
+          <div className="flex flex-col text-palette-yellow text-opacity-50 items-center h-full">
             <p2 className="rounded-full bg-palette-black border-2 border-palette-yellow border-opacity-50 px-2.5 py-1">
               2022
             </p2>
-            <div className="relative h-36 flex-grow w-0.5 bg-palette-yellow bg-opacity-50">
-              <div className="absolute top-1 bottom-16 w-0.5 bg-palette-yellow" />
+            <div className="relative h-full flex-grow w-0.5 bg-palette-yellow bg-opacity-50">
+              <div
+                className={
+                  "absolute w-0.5 transition-all duration-700 bg-palette-yellow " +
+                  (selected == 0
+                    ? "top-5 bottom-36"
+                    : selected == 1
+                    ? "top-10 bottom-32"
+                    : selected == 2
+                    ? "top-6 bottom-20"
+                    : "top-28 bottom-2")
+                }
+              />
             </div>
             <p2 className="rounded-full bg-palette-black border-2 border-palette-yellow border-opacity-50 px-2.5 py-1">
               2018
             </p2>
           </div>
-          <ul className="flex-col space-y-2 w-2/6" id="tabVertical" role="tablist">
+          <ul className="flex flex-col h-full py-10 w-1/6 -ml-4 justify-evenly" id="tabVertical" role="tablist">
             {[0, 1, 2, 3].map((e) => {
               return (
                 <li id={e.toString()} className="flex-grow" role="presentation">
@@ -124,7 +135,7 @@ export default function Experience({ language }) {
               );
             })}
           </ul>
-          <div id="experienceText" className="w-4/6 leading-snug space-y-4 text-justify px-10">
+          <div id="experienceText" className="w-5/6 leading-snug space-y-5 text-justify px-16">
             <h4>{expTexts[language][selected][0]}</h4>
             <p>{expTexts[language][selected][1]}</p>
           </div>

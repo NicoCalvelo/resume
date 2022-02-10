@@ -1,0 +1,62 @@
+.reveal {
+  overflow-x: hidden;
+  position: relative;
+  animation-name: reveal-text;
+  text-shadow: -1px -1px 0 #DFDFDF, 1px -1px 0 #DFDFDF, -1px 1px 0 #DFDFDF, 1px 1px 0 #DFDFDF;
+
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3686ff;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    pointer-events: none;
+    animation-name: revealer-text;
+  }
+
+  &,
+  &:after {
+    animation-delay: 0.3s;
+    animation-iteration-count: 1;
+    animation-duration: 800ms;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+  &:after {
+    background-color: #DFDFDF;
+  }
+}
+
+@keyframes reveal-text {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes revealer-text {
+  0%,
+  50% {
+    transform-origin: 0 50%;
+  }
+
+  60%,
+  100% {
+    transform-origin: 100% 50%;
+  }
+
+  60% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleX(0);
+  }
+}

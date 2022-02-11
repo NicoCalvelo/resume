@@ -10,35 +10,35 @@ const InterestsList = {
     },
     {
       title: "Sports",
-      list: ["Tennis", "Cycling", "Basquet"],
+      list: ["Tennis", "Cycling", "Basketball"],
     },
   ],
   Spanish: [
     {
-      title: "Interests",
-      list: ["Nature", "Tech", "Startups"],
+      title: "Intereses",
+      list: ["Naturaleza", "Tecnología", "Startups"],
     },
     {
-      title: "Languages",
-      list: ["French", "English", "Spanish"],
+      title: "Idioma",
+      list: ["Francés", "Inglés", "Español"],
     },
     {
-      title: "Sports",
-      list: ["Tennis", "Cycling", "Basquet"],
+      title: "Deportes",
+      list: ["Tenis", "Ciclismo", "Basquet"],
     },
   ],
   French: [
     {
-      title: "Interests",
+      title: "Intérêts",
       list: ["Nature", "Tech", "Startups"],
     },
     {
-      title: "Languages",
-      list: ["French", "English", "Spanish"],
+      title: "Langue",
+      list: ["Français", "Anglais", "Espagnol"],
     },
     {
       title: "Sports",
-      list: ["Tennis", "Cycling", "Basquet"],
+      list: ["Tennis", "Cyclisme", "Basquet"],
     },
   ],
 };

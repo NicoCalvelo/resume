@@ -6,6 +6,7 @@ const buttons = {
   Spanish: ["Manager de Producto", "Front-end", "Back-end", "Desarrollo de juegos"],
   French: ["Gestionnaire de produits", "Front-end", "Back-end", "Développement de jeux"],
 };
+const frameworks = ["Javascript", "React", "Next.js", "Flutter", "Unity3D", "C#", "CSS", "Tailwind"];
 
 const expTexts = {
   English: [
@@ -138,6 +139,18 @@ export default function Experience({ language }) {
           <div id="experienceText" className="w-5/6 leading-snug space-y-5 text-justify px-16">
             <h4>{expTexts[language][selected][0]}</h4>
             <p>{expTexts[language][selected][1]}</p>
+            <ul className="grid leading-snug text-sm font-bold tracking-wider gap-2 grid-cols-3">
+                {frameworks.map((e) => {
+                  return (
+                    <li id={frameworks.indexOf(e).toString()} className="flex flex-row items-center space-x-2">
+                      <svg width="7" height="9" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.375 11.5L0.624999 22.3253L0.625 0.674682L19.375 11.5Z" fill="#EB784B" />
+                      </svg>
+                      <div>{e}</div>
+                    </li>
+                  );
+                })}
+              </ul>
           </div>
         </div>
       </div>

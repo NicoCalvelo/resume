@@ -24,8 +24,7 @@ export default function Contact({ language }) {
 
   return (
     <>
-      <div className="h-36" />
-      <div id="grey" className="flex-col items-center space-y-24">
+      <div id="grey" className="flex-col pt-48 items-center space-y-24">
         <div id="h3grey" className="flex flex-row items-center space-x-4 px-4">
           <div className="h-0.25 w-1/5 bg-palette-grey" />
           <h3>{texts[language][0]}</h3>

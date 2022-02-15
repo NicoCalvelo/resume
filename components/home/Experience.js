@@ -129,8 +129,7 @@ export default function Experience({ language }) {
 
   return (
     <>
-      <div className="h-20" />
-      <div id="yellow" className="flex-col space-y-10">
+      <div id="yellow" className="flex-col pt-36 space-y-10">
         <div id="h3yellow" className="flex flex-row items-center space-x-4 px-4">
           <div className="h-0.25 flex-grow bg-palette-yellow" />
           <h3>{texts[language][0]}</h3>

@@ -69,10 +69,22 @@ p {
   font-weight: 400;
   line-height: 130%;
 }
-p2{
+p2 {
   font-family: Livvic;
   font-size: 10px;
   font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 12px;
+  }
 }
 
 @layer components {
@@ -83,10 +95,10 @@ p2{
   .action-btn {
     @apply text-palette-green border shadow-lg hover:shadow-xl text-sm border-palette-green text-center mb-5 mt-4 rounded py-1.5 px-4 cursor-pointer hover:bg-palette-green hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-green-300 ring-opacity-20 appearance-none;
   }
-  .btn-yellow-selected{
+  .btn-yellow-selected {
     @apply text-palette-yellow text-left uppercase text-xs font-semibold w-full py-3 px-2 cursor-pointer focus:outline-none transition-colors hover:bg-palette-yellow hover:bg-opacity-10 duration-300 ease-in;
   }
-  .btn-yellow-deselected{
+  .btn-yellow-deselected {
     @apply text-palette-yellow text-left text-opacity-50 uppercase whitespace-nowrap text-xs font-normal hover:shadow-xl w-full py-3 px-2 cursor-pointer hover:bg-palette-yellow hover:bg-opacity-10 focus:outline-none transition-colors duration-300 ease-in;
   }
 }

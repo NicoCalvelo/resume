@@ -24,8 +24,8 @@ const texts = {
 
 export default function Header({ language }) {
   return (
-    <div id='green' className="flex flex-row items-center justify-between">
-      <div className="flex-col mb-20 space-y-3 w-3/5 z-10 -mr-20">
+    <div id='green' className="flex flex-col-reverse md:flex-col md:flex-row items-center justify-between">
+      <div className="flex-col text-left md:mb-16 space-y-3 md:w-3/5 z-10 md:-mr-20">
         <div className="leading-none text-palette-green">
           <div className={styles.outer}>
             <div className="font-medium text-sm">{texts[language][0]}</div>
@@ -40,7 +40,7 @@ export default function Header({ language }) {
             </div>
           </div>
         </div>
-        <div className="leading-snug">
+        <div className="leading-none md:leading-snug">
           <div className={styles.outer}>
             <h2 >{texts[language][1]}</h2>
             <div className={styles.inner}>
@@ -48,14 +48,14 @@ export default function Header({ language }) {
             </div>
           </div>
           <div className={styles.fadeIn}>
-            <p>{texts[language][2]}</p>
+            <p className="pt-2">{texts[language][2]}</p>
           </div>
         </div>
         <div className={styles.fadeIn}>
           <button className="action-btn">{texts[language][3]}</button>
         </div>
       </div>
-      <div className="relative w-3/6">
+      <div className="relative mb-10 w-5/6 md:mb-0 md:w-3/6">
         <div className={styles.backgroundImg} />
         <Image priority className="rounded" src="/images/header.jpg" width={582} height={436} alt="header_img" />
       </div>

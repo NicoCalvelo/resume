@@ -52,8 +52,7 @@ export default function AboutMe({ language }) {
 
   return (
     <>
-      <div className="h-36" />
-      <div id="orange" className="flex flex-col space-y-20">
+      <div id="orange" className="flex flex-col pt-36 space-y-10">
         <div id="h3" className="flex flex-row items-center space-x-4 px-4">
           <h3>{texts[language][0]}</h3>
           <div className="h-0.25 flex-grow bg-palette-orange" />
@@ -71,10 +70,9 @@ export default function AboutMe({ language }) {
             />
           </div>
           <div className="flex leading-snug w-3/5 flex-col space-y-4 px-4 ">
-            <p>{texts[language][1]}</p>
-            <p>{texts[language][2]}</p>
-            <p>{texts[language][3]}</p>
-            <p>{texts[language][4]}</p>
+            {texts[language].map((e) => {
+              return texts[language].indexOf(e) == 0 ? <></> : <p className="text-justify">{e}</p>;
+            })}
           </div>
         </div>
       </div>

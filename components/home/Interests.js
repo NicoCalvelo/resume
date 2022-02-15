@@ -87,7 +87,7 @@ export default function Interests({ language }) {
       <div className="flex flex-row justyfy-between items-center py-10 space-x-10 mx-16">
         {[0, 1, 2].map((element) => {
           return (
-            <div className="flex flex-row w-2/6 space-x-2 items-center">
+            <div key={element.toString()} className="flex flex-row w-2/6 space-x-2 items-center">
               <div className="flex flex-col space-y-2 items-center w-24">
                 {getSvg(element)}
                 <p className="font-semibold text-lg text-palette-grey-blue tarcking-wider">

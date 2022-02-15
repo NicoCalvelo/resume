@@ -6,19 +6,19 @@ const texts = {
     "Hi, my name is",
     "Young tech-entrepreneur.",
     "An app for a local gym. A mobile game based in my hometown. A web app to change how we communicate and some crypto experiences.",
-    'Download my formal CV',
+    'Download CV',
   ],
   Spanish: [
     "Hola, me llamo",
     "Joven emprendedor en tecnología.",
     "Una aplicación para un gimnasio local. Un juego móvil basado en mi ciudad natal. Una aplicación web para cambiar la forma en que nos comunicamos y algunas experiencias crypto.",
-    'Descargar mi CV formal',
+    'Descargar CV',
   ],
   French: [
     "Salut, mon nom est",
     "Jeune entrepreneur en technologie.",
     "Une application pour un gymnase local. Un jeu mobile basé dans ma ville natale. Une application web pour changer la façon dont nous communiquons et certaines expériences crypto.",
-    'Télécharger mon CV officiel',
+    'Télécharger CV',
   ],
 };
 

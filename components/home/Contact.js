@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import styles from "./contact.module.scss";
 
 const texts = {
-  English: ["Product Manager", "Front-end", "Back-end", "Game dev"],
-  Spanish: ["Manager de Producto", "Front-end", "Back-end", "Desarrollo de juegos"],
-  French: ["Gestionnaire de produits", "Front-end", "Back-end", "Développement de jeux"],
+  English: ["Contact", "Designed & Built by Nicolás Calvelo"],
+  Spanish: ["Contacto", "Diseñado y Construido por Nicolás Calvelo"],
+  French: ["Contact", "Conçu et construit par Nicolás Calvelo"],
 };
 
 export default function Contact({ language }) {
@@ -28,7 +28,7 @@ export default function Contact({ language }) {
       <div id="grey" className="flex-col items-center space-y-24">
         <div id="h3grey" className="flex flex-row items-center space-x-4 px-4">
           <div className="h-0.25 w-1/5 bg-palette-grey" />
-          <h3>Contact</h3>
+          <h3>{texts[language][0]}</h3>
           <div className="h-0.25 flex-grow bg-palette-grey" />
         </div>
         <div className="flex flex-row space-x-5 px-10 h-32">
@@ -58,7 +58,9 @@ export default function Contact({ language }) {
             <div className="text-sm text-center text-palette-grey">t.me/nicocalvelo</div>
           </div>
         </div>
-        <div className="mx-auto pt-20 text-center text-xs text-palette-grey text-opacity-50">Designed & Built by Nicolás Calvelo</div>
+        <div className="mx-auto pt-20 text-center text-xs text-palette-grey text-opacity-50">
+        {texts[language][1]}
+        </div>
       </div>
     </>
   );

@@ -129,27 +129,27 @@ export default function Experience({ language }) {
 
   return (
     <>
-      <div id="yellow" className="flex-col pt-36 space-y-10">
-        <div id="h3yellow" className="flex flex-row items-center space-x-4 px-4">
+      <div id="yellow" className="flex-col pt-32 space-y-5">
+        <div id="h3yellow" className="flex flex-row items-center space-x-1 md:space-x-4 md:px-4">
           <div className="h-0.25 flex-grow bg-palette-yellow" />
           <h3>{texts[language][0]}</h3>
         </div>
-        <div className="flex items-center space-x-2 justify-between h-72 my-20">
-          <div className="flex flex-col text-palette-yellow text-opacity-50 items-center h-full">
+        <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-2 space-y-5 md:space-y-0 md:h-72 my-20">
+          <div className="flex flex-row-reverse md:flex-col text-palette-yellow text-opacity-50 items-center w-full md:w-min h-full">
             <p2 className="rounded-full bg-palette-black border-2 border-palette-yellow border-opacity-50 px-2.5 py-1">
               2022
             </p2>
-            <div className="relative h-full flex-grow w-0.5 bg-palette-yellow bg-opacity-50">
+            <div className="relative h-0.5 w-full md:w-0.5 md:h-full flex-grow bg-palette-yellow bg-opacity-50">
               <div
                 className={
-                  "absolute w-0.5 transition-all duration-700 bg-palette-yellow " +
+                  "absolute h-0.5 md:h-auto md:w-0.5 transition-all duration-700 bg-palette-yellow " +
                   (selected == 0
-                    ? "top-5 bottom-36"
+                    ? "right-3 left-36 md:right-0 md:left-0 md:top-5 md:bottom-36"
                     : selected == 1
-                    ? "top-10 bottom-32"
+                    ? "right-2 left-24 md:right-0 md:left-0 md:top-5 md:bottom-32"
                     : selected == 2
-                    ? "top-4 bottom-16"
-                    : "top-24 bottom-2")
+                    ? "right-4 left-16 md:right-0 md:left-0 md:top-4 md:bottom-16"
+                    : "right-24 left-2 md:right-0 md:left-0 md:top-24 md:bottom-2")
                 }
               />
             </div>
@@ -157,7 +157,7 @@ export default function Experience({ language }) {
               2018
             </p2>
           </div>
-          <ul className="flex flex-col h-full py-10 w-1/6 -ml-4 justify-evenly" id="tabVertical" role="tablist">
+          <ul className="grid grid-cols-2 md:flex md:flex-col md:h-full md:py-10 md:w-1/6 md:-ml-4 justify-evenly" id="tabVertical" role="tablist">
             {[0, 1, 2, 3].map((e) => {
               return (
                 <li id={e.toString()} className="flex-grow" role="presentation">
@@ -173,16 +173,16 @@ export default function Experience({ language }) {
               );
             })}
           </ul>
-          <div id="experienceText" className="w-5/6 leading-snug space-y-1.5 px-16">
-            <h4 className="py-5">{expTexts[language][selected][0]}</h4>
+          <div id="experienceText" className="md:w-5/6 leading-snug space-y-1.5 px-2 md:px-16">
+            <h4 className="md:py-5">{expTexts[language][selected][0]}</h4>
             {expTexts[language][selected].map((e) => {
               return expTexts[language][selected].indexOf(e) == 0 ? <></> : <p className="text-justify">{e}</p>;
             })}
-            <ul className="grid leading-snug pt-6 text-sm font-bold tracking-wider gap-2 grid-cols-3">
+            <ul className="grid leading-snug pt-6 text-xs md:text-sm font-semibold md:font-bold md:tracking-wider gap-2 grid-cols-3">
               {frameworks[selected].map((e) => {
                 return (
                   <li id={frameworks.indexOf(e).toString()} className="flex flex-row items-center space-x-2">
-                    <svg width="7" height="9" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="flex-shrink-0" width="7" height="9" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M19.375 11.5L0.624999 22.3253L0.625 0.674682L19.375 11.5Z" fill="#EB784B" />
                     </svg>
                     <div>{e}</div>

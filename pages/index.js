@@ -12,7 +12,7 @@ import SocailSideBar from "../components/SocialSideBar";
 const siteTitle = "Nico Calvelo";
 
 export default function Home() {
-  const [language, setLanguage] = useState("English");
+  const [language, setLanguage] = useState("French");
   const [color, setColor] = useState("#2FEB98");
 
   useEffect(() => {
@@ -55,7 +55,7 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <title>{siteTitle}</title>
       </Head>
-      <div className="relative mx-auto max-w-5xl text-palette-grey-blue space-y-10">
+      <div className="relative mx-auto max-w-5xl text-palette-grey-blue space-y-16">
         <NavBar language={language} color={color} />
         <Language
           language={language}

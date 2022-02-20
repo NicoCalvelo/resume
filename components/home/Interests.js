@@ -45,7 +45,7 @@ const InterestsList = {
 
 const margins = [
   ["mr-4", "mr-4", ""],
-  ["w-min", "mr-2", ""],
+  ["w-min", "mr-3", ""],
   ["w-min", "mr-10", ""],
 ];
 
@@ -84,11 +84,11 @@ const getSvg = (n) => {
 
 export default function Interests({ language }) {
   return (
-      <div className="flex flex-row justyfy-between items-center py-10 space-x-10 mx-16">
+      <div className="flex flex-col md:flex-row justyfy-between items-center md:py-10 space-y-10 md:space-y-0 md:space-x-10 mr-5 md:mr-0 md:mx-16">
         {[0, 1, 2].map((element) => {
           return (
-            <div key={element.toString()} className="flex flex-row w-2/6 space-x-2 items-center">
-              <div className="flex flex-col space-y-2 items-center w-24">
+            <div key={element.toString()} className="flex flex-row w-full md:w-2/6 space-x-2 items-center justify-between">
+              <div className="flex flex-col space-y-2 items-center w-20 md:w-24">
                 {getSvg(element)}
                 <p className="font-semibold text-lg text-palette-grey-blue tarcking-wider">
                   {InterestsList[language][element]["title"]}

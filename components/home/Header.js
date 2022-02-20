@@ -24,7 +24,7 @@ const texts = {
 
 export default function Header({ language }) {
   return (
-    <div id='green' className="flex flex-col-reverse md:flex-col md:flex-row items-center justify-between">
+    <div id='green' className="flex flex-col-reverse md:flex-row items-center justify-between">
       <div className="flex-col text-left md:mb-16 space-y-3 md:w-3/5 z-10 md:-mr-20">
         <div className="leading-none text-palette-green">
           <div className={styles.outer}>

@@ -70,7 +70,6 @@ export default function Home() {
         <Experience language={language} />
         <Contact language={language} />
         <SocailSideBar color={color} />
-        <div className="h-5" />
       </div>
     </>
   );

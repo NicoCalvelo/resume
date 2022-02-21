@@ -24,13 +24,14 @@ export default function Contact({ language }) {
 
   return (
     <>
-      <div id="grey" className="flex-col pt-48 items-center space-y-24">
+      <div className="h-32 w-full"></div>
+      <div id="grey" className="flex-col items-center space-y-28">
         <div id="h3grey" className="flex flex-row items-center space-x-4 px-4">
           <div className="h-0.25 w-1/5 bg-palette-grey" />
           <h3>{texts[language][0]}</h3>
           <div className="h-0.25 flex-grow bg-palette-grey" />
         </div>
-        <div className="flex flex-row space-x-5 px-10 h-32">
+        <div className="flex flex-row space-x-5 px-10 h-48">
           <div className="relative flex flex-col space-y-5 justify-center items-center flex-grow border px-2.5 pt-5 pb-4 border-palette-grey rounded hover:pb-6 hover:-mb-4 hover:-mt-2 hover:shadow-2xl transition-all duration-300">
             <svg width="36" height="30" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -57,9 +58,7 @@ export default function Contact({ language }) {
             <div className="text-sm text-center text-palette-grey">t.me/nicocalvelo</div>
           </div>
         </div>
-        <div className="mx-auto pt-20 text-center text-xs text-palette-grey text-opacity-50">
-        {texts[language][1]}
-        </div>
+        <div className="mx-auto pt-14 pb-4 text-center text-xs text-palette-grey text-opacity-50">{texts[language][1]}</div>
       </div>
     </>
   );

@@ -4,7 +4,7 @@ export default function Language({ language, onSelect }) {
   const classDefault = "p-2 font-light";
 
   return (
-    <div className="flex flex-row items-center justify-center text-xs md:text-sm space-x-2 h-4 md:h-6 pt-10">
+    <div className="flex flex-row items-center justify-center text-xs md:text-sm space-x-2 pt-10 h-4 md:h-6">
       <textbtn
         onClick={() => {
           if (language != "English") onSelect("English");
@@ -13,7 +13,7 @@ export default function Language({ language, onSelect }) {
       >
         English
       </textbtn>
-      <div className="bg-palette-grey-blue w-0.25 h-full" />
+      <div className="bg-palette-grey-blue w-0.25 h-4 md:h-6" />
       <textbtn
         onClick={() => {
           if (language != "Spanish") onSelect("Spanish");
@@ -22,7 +22,7 @@ export default function Language({ language, onSelect }) {
       >
         Español
       </textbtn>
-      <div className="bg-palette-grey-blue w-0.25 h-full" />
+      <div className="bg-palette-grey-blue w-0.25 h-4 md:h-6" />
       <textbtn
         onClick={() => {
           if (language != "French") onSelect("French");

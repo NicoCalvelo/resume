@@ -24,15 +24,15 @@ export default function Contact({ language }) {
 
   return (
     <>
-      <div className="h-32 w-full"></div>
-      <div id="grey" className="flex-col items-center space-y-28">
-        <div id="h3grey" className="flex flex-row items-center space-x-4 px-4">
+      <div className="h-16 md:h-32 w-full"></div>
+      <div id="grey" className="flex-col items-center space-y-14 md:space-y-28">
+        <div id="h3grey" className="flex flex-row items-center space-x-1 md:space-x-4 md:px-4">
           <div className="h-0.25 w-1/5 bg-palette-grey" />
           <h3>{texts[language][0]}</h3>
           <div className="h-0.25 flex-grow bg-palette-grey" />
         </div>
-        <div className="flex flex-row space-x-5 px-10 h-48">
-          <div className="relative flex flex-col space-y-5 justify-center items-center flex-grow border px-2.5 pt-5 pb-4 border-palette-grey rounded hover:pb-6 hover:-mb-4 hover:-mt-2 hover:shadow-2xl transition-all duration-300">
+        <div className="flex flex-col md:flex-row md:px-10 h-48">
+          <div className="flex flex-col m-2 space-y-5 justify-center items-center flex-grow border px-2.5 pt-5 pb-4 border-palette-grey rounded hover:pb-6 md:hover:-mb-4 hover:mt-0 hover:shadow-2xl transition-all duration-300">
             <svg width="36" height="30" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M2.125 5.16699L11.6595 11.5233C12.4712 12.0645 13.5288 12.0645 14.3405 11.5233L23.875 5.16699M4.54167 18.4587H21.4583C22.793 18.4587 23.875 17.3767 23.875 16.042V3.95866C23.875 2.62397 22.793 1.54199 21.4583 1.54199H4.54167C3.20698 1.54199 2.125 2.62397 2.125 3.95866V16.042C2.125 17.3767 3.20698 18.4587 4.54167 18.4587Z"
@@ -44,7 +44,7 @@ export default function Contact({ language }) {
             </svg>
             <div className="text-sm text-center text-palette-grey">dia.calvelo.nicolas@gmail.com</div>
           </div>
-          <div className="relative flex flex-col space-y-5 justify-center items-center flex-grow border px-2.5 pt-5 pb-4 border-palette-grey rounded hover:pb-6 hover:-mb-4 hover:-mt-2 hover:shadow-2xl transition-all duration-300">
+          <div className="flex flex-col m-2 space-y-5 justify-center items-center flex-grow border px-2.5 pt-5 pb-4 border-palette-grey rounded hover:pb-6 md:hover:-mb-4 hover:mt-4 md:hover:mt-0 hover:shadow-2xl transition-all duration-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="36"

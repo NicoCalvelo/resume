@@ -90,11 +90,11 @@ export default function Interests({ language }) {
             <div key={element.toString()} className="flex flex-row w-full md:w-2/6 space-x-2 items-center justify-between">
               <div className="flex flex-col space-y-2 items-center w-20 md:w-24">
                 {getSvg(element)}
-                <p className="font-semibold text-lg text-palette-grey-blue tarcking-wider">
+                <p className="font-semibold text-base md:text-lg text-palette-grey-blue tarcking-wider">
                   {InterestsList[language][element]["title"]}
                 </p>
               </div>
-              <div className="flex flex-col flex-grow space-y-1.5 text-sm text-palette-grey-blue font-light tracking-wide">
+              <div className="flex flex-col flex-grow space-y-1.5 text-xs md:text-sm text-palette-grey-blue font-light tracking-wide">
                 <div className={"border border-palette-orange border-opacity-50 rounded px-4 py-.5 " + margins[element][0]}>
                   {InterestsList[language][element]["list"][0]}
                 </div>

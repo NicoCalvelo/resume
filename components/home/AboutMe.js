@@ -49,7 +49,7 @@ export default function AboutMe({ language }) {
 
   return (
     <>
-      <div className="h-20 w-full"></div>
+      <div className="h-14 md:h-20 w-full"></div>
       <div id="orange" className="flex flex-col space-y-5">
         <div id="h3" className="flex flex-row items-center space-x-1 md:space-x-4 md:px-4">
           <h3>{texts[language][0]}</h3>
@@ -57,10 +57,10 @@ export default function AboutMe({ language }) {
         </div>
         <div className="flex flex-col md:flex-row md:px-8 space-y-5 md:space-y-0 md:space-x-5 items-center justify-evenly">
           <div className="flex relative justify-end w-4/5 md:w-2/5">
-            <div className="absolute max-w-xs hover:scale-110 hover:bg-palette-orange hover:bg-opacity-20 transition duration-500 ease-in-out bottom-2 top-4 right-4 -left-4 md:bottom-6 md:top-8 md:right-20 md:left-0 border border-palette-orange rounded" />
+            <div className="absolute max-w-xs hover:scale-110 hover:bg-palette-orange hover:bg-opacity-20 transition duration-500 ease-in-out bottom-4 top-5 right-4 -left-4 md:bottom-6 md:top-8 md:right-20 md:left-0 border border-palette-orange rounded" />
             <Image
               priority
-              className="rounded max-w-xs hover:scale-150 md:hover:scale-110 transition duration-500 ease-in-out"
+              className="rounded max-w-xs hover:scale-125 md:hover:scale-110 transition duration-500 ease-in-out"
               src={"/images/fotixo.jpg"}
               width={375}
               height={500}

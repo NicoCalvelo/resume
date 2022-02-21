@@ -129,7 +129,7 @@ export default function Experience({ language }) {
 
   return (
     <>
-      <div className="h-28 w-full"></div>
+      <div className="h-16 md:h-28 w-full"></div>
       <div id="yellow" className="flex-col space-y-5">
         <div id="h3yellow" className="flex flex-row items-center space-x-1 md:space-x-4 md:px-4">
           <div className="h-0.25 flex-grow bg-palette-yellow" />
@@ -145,12 +145,12 @@ export default function Experience({ language }) {
                 className={
                   "absolute h-0.5 md:h-auto md:w-0.5 transition-all duration-700 bg-palette-yellow " +
                   (selected == 0
-                    ? "right-4 left-36 md:right-0 md:left-0 md:top-5 md:bottom-48"
+                    ? "right-4 left-40 md:right-0 md:left-0 md:top-5 md:bottom-48"
                     : selected == 1
                     ? "right-8 left-24 md:right-0 md:left-0 md:top-10 md:bottom-24"
                     : selected == 2
-                    ? "right-3 left-16 md:right-0 md:left-0 md:top-4 md:bottom-24"
-                    : "right-28 left-2 md:right-0 md:left-0 md:top-28 md:bottom-2")
+                    ? "right-2 left-20 md:right-0 md:left-0 md:top-4 md:bottom-24"
+                    : "right-28 left-1.5 md:right-0 md:left-0 md:top-28 md:bottom-2")
                 }
               />
             </div>

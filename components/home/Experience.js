@@ -22,7 +22,7 @@ const frameworks = [
 const expTexts = {
   English: [
     [
-      "Jun. 2021 - Sep. 2021",
+      "Aug. 2021 - Nov. 2021",
       `In August 2021 I started my job as a product manager at Voicemix inc. It was a short but otherwise intense experience, as it usually is in the life of start-ups. `,
       `My daily job was to coordinate the UX/UI and development team to address both user stories, marketing team requirements and the overall vision of the company. `,
       `We have used agile work methodologies and conducted multiple tests with different user groups. We knew that if we wanted a tool that impacted globally, we had to get a product that people loved.`,
@@ -49,7 +49,7 @@ const expTexts = {
   ],
   Spanish: [
     [
-      "Jun. 2021 - Sep. 2021",
+      "Ago. 2021 - Nov. 2021",
       `En agosto del 2021 comenzó mi trabajo como manager de producto en Voicemix inc. Fue una experiencia corta pero por demás de intensa, como suele ser en la vida de las start-ups.`,
       `Mi trabajo diario consistía en coordinar al equipo de UX/UI y de desarrollo para afrontar tanto las historias de usuarios, los requisitos del equipo de marketing y la vision general de la compañía.`,
       `Hemos utilizado metodologías de trabajo agiles y realizado multiples testeos con diferentes grupos de usuarios. Sabíamos que si queríamos una herramienta que impacte a nivel mundial debíamos conseguir un producto que la gente ame.`,
@@ -76,7 +76,7 @@ const expTexts = {
   ],
   French: [
     [
-      "Jun. 2021 - Sep. 2021",
+      "Aoû. 2021 - Nov. 2021",
       `En août 2021, j’ai commencé à travailler comme responsable produit chez Voicemix inc. Ce fut une expérience courte mais intense, comme c’est souvent le cas dans la vie des start-ups. `,
       `Mon travail quotidien consistait à coordonner l’équipe UX/UI et de développement pour faire face à la fois aux histoires d’utilisateurs, aux exigences de l’équipe marketing et à la vision globale de l’entreprise. `,
       `Nous avons utilisé des méthodes de travail agiles et effectué plusieurs tests avec différents groupes d’utilisateurs. Nous savions que si nous voulions un outil qui ait un impact mondial, nous devions obtenir un produit que les gens aiment.`,
@@ -165,7 +165,7 @@ export default function Experience({ language }) {
           >
             {[0, 1, 2, 3].map((e) => {
               return (
-                <li id={e.toString()} className="flex-grow" role="presentation">
+                <li key={e.toString} className="flex-grow" role="presentation">
                   <button
                     className={selected === e ? "btn-yellow-selected" : "btn-yellow-deselected"}
                     onClick={() => {
@@ -186,7 +186,7 @@ export default function Experience({ language }) {
             <ul className="grid leading-snug pt-6 text-xs md:text-sm font-semibold md:font-bold md:tracking-wider gap-2 grid-cols-3">
               {frameworks[selected].map((e) => {
                 return (
-                  <li id={frameworks.indexOf(e).toString()} className="flex flex-row items-center space-x-2">
+                  <li key={frameworks.indexOf(e).toString()} className="flex flex-row items-center space-x-2">
                     <svg
                       className="flex-shrink-0"
                       width="7"

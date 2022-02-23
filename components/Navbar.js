@@ -55,7 +55,7 @@ export default function NavBar({ language, color }) {
           (scrolling ? "transition-transform" : "-translate-y-16 transform transition-transform")
         }
       >
-        <Link href="/">
+        <Link href="/" passHref>
           <svg width="23.06" height="30" viewBox="0 0 56 72" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               className="transition-all duration-500"

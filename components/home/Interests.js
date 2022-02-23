@@ -74,9 +74,9 @@ const getSvg = (n) => {
         <path
           d="M20.7234 16.487V2.05957L2.17383 24.7312H16.6012L16.6012 39.1586L35.1508 16.487L20.7234 16.487Z"
           stroke="#98CDD2"
-          stroke-width="3"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     );

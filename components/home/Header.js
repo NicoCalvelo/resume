@@ -5,20 +5,20 @@ const texts = {
   English: [
     "Hi, my name is",
     "Young tech-entrepreneur.",
-    "An app for a local gym. A mobile game based in my hometown. A web app to change how we communicate and some crypto experiences.",
-    'Download CV',
+    "An app for a local gym. A game based in my hometown. A web app to raise our voice and some crypto experiences.",
+    'My resume',
   ],
   Spanish: [
     "Hola, me llamo",
     "Joven emprendedor en tecnología.",
-    "Una aplicación para un gimnasio local. Un juego móvil basado en mi ciudad natal. Una aplicación web para cambiar la forma en que nos comunicamos y algunas experiencias crypto.",
-    'Descargar CV',
+    "Una aplicación para un gimnasio local. Un juego basado en mi ciudad natal. Una aplicación web para alzar nuestra voz y algunas experiencias crypto.",
+    'Mi CV',
   ],
   French: [
     "Salut, mon nom est",
     "Jeune entrepreneur en technologie.",
-    "Une application pour un gymnase local. Un jeu mobile basé dans ma ville natale. Une application web pour changer la façon dont nous communiquons et certaines expériences crypto.",
-    'Télécharger CV',
+    "Une application pour une salle de gym locale. Un jeu basé dans ma ville natale. Une application web pour faire entendre notre voix et des expériences Crypto.",
+    'Mon résumé',
   ],
 };
 
@@ -48,11 +48,11 @@ export default function Header({ language }) {
             </div>
           </div>
           <div className={styles.fadeIn}>
-            <p className="pt-2">{texts[language][2]}</p>
+            <p className="py-2">{texts[language][2]}</p>
           </div>
         </div>
         <div className={styles.fadeIn}>
-          <button className="action-btn">{texts[language][3]}</button>
+          <a href="https://drive.google.com/file/d/1payP2JuK5lVdE2uI_VvmXuxWXmL9TEc4/view?usp=sharing" target="_blank" rel="noreferrer" className="action-btn">{texts[language][3]}</a>
         </div>
       </div>
       <div className="relative mb-10 w-5/6 md:mb-0 md:w-3/6">

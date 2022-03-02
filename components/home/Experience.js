@@ -13,28 +13,28 @@ const buttons = {
   French: ["Gestionnaire de produits", "Front-end", "Back-end", "Développement de jeux"],
 };
 const frameworks = [
-  ["SCRUM", "Testing", "Funnels", "user stories"],
-  ["Dart", "html", "CSS", "Tailwind", "Figma"],
-  ["Javascript", "React", "Next.js", "Flutter", "Firebase", "APIs", "Webhooks", "Machine learning", "BigQuery"],
-  ["Uniy3D", "C#", "GIMP"],
+  ["Reports", "Testing", "Agile", "User stories"],
+  ["Flutter", "HTML", "CSS", "Tailwind", "Figma"],
+  ["Javascript", "PHP", "React", "Next.js", "Wamp", "Firebase", "MySQL", "APIs", "Machine learning", "Payments"],
+  ["Uniy3D", "C#", "GIMP", "Windows", "Android"],
 ];
 
 const expTexts = {
   English: [
     [
-      "Aug. 2021 - Nov. 2021",
+      "August 2021 - November 2021",
       `In August 2021 I started my job as a product manager at Voicemix inc. It was a short but otherwise intense experience, as it usually is in the life of start-ups. `,
       `My daily job was to coordinate the UX/UI and development team to address both user stories, marketing team requirements and the overall vision of the company. `,
       `We have used agile work methodologies and conducted multiple tests with different user groups. We knew that if we wanted a tool that impacted globally, we had to get a product that people loved.`,
     ],
     [
-      "Sep. 2020 - May 2021",
+      "September 2020 - May 2021",
       `I started developing because of the need to show the world what I was doing. I saw it as the part that had to be done.`,
       `When I joined Voicemix, I faced the big challenge of making users understand the innovative tool we were building. This led me to research about UX/UI, to pay attention to the smallest details and discover a world that went beyond the beautiful presentation of some texts and buttons.`,
       `If something was confusing, we were likely to lose customers. Although I’m not very good at design, I have an eye for judgment and I quickly realize that things are not aesthetically aligned. `,
     ],
     [
-      "Sep. 2020 - Nov. 2021",
+      "June 2020 - August. 2021",
       `I have learned everything necessary to build a fully functional web app. Undoubtedly the back-end is what I master most. `,
       `Starting with basic services connecting to firebase, passing through payment systems with Stripe and its webhooks, up to APIs such as twitter, slack, spreadsheets, mailing services and others. `,
       `I have occasionally used Gatsby for blogs, Machine learning for a trading bot and Solidity to venture into the crypto world. `,
@@ -49,19 +49,19 @@ const expTexts = {
   ],
   Spanish: [
     [
-      "Ago. 2021 - Nov. 2021",
+      "Agosto 2021 - Noviembre 2021",
       `En agosto del 2021 comenzó mi trabajo como manager de producto en Voicemix inc. Fue una experiencia corta pero por demás de intensa, como suele ser en la vida de las start-ups.`,
       `Mi trabajo diario consistía en coordinar al equipo de UX/UI y de desarrollo para afrontar tanto las historias de usuarios, los requisitos del equipo de marketing y la vision general de la compañía.`,
       `Hemos utilizado metodologías de trabajo agiles y realizado multiples testeos con diferentes grupos de usuarios. Sabíamos que si queríamos una herramienta que impacte a nivel mundial debíamos conseguir un producto que la gente ame.`,
     ],
     [
-      "Sep. 2020 - May 2021",
+      "Septiembre 2020 - Mayo 2021",
       `Empecé a desarrollar por la necesidad de mostrar al mundo lo que estaba haciendo. Lo veía como la parte que tenía que hacerse.`,
       `Cuando entré en Voicemix, me enfrenté al gran desafío de hacer que los usuarios entiendan la herramienta innovadora que estábamos construyendo. Esto me llevó a investigar sobre UX/UI, a prestar atención a los detalles más pequeños y descubrir un mundo que iba más allá de presentar de forma bonita algunos textos y botones.`,
       `Si algo se prestaba a confusión, era muy probable que perdiéramos clientes. Aunque no soy muy bueno en diseño, tengo ojo para el juicio y rápidamente me doy cuenta de que las cosas no están estéticamente alineadas.`,
     ],
     [
-      "Sep. 2020 - Nov. 2021",
+      "Junio 2020 - Agosto 2021",
       `He aprendido todo lo necesario para construir una app web completamente funcional. Sin duda el back-end es de lo que mas domino.`,
       `Comenzando por los servicios básicos conectando con firebase, pasando por sistemas de pagos con Stripe y sus webhooks, hasta APIs como twitter, slack, hojas de calculo, servicios de mailing y otros.`,
       `Ocasionalmente he usado Gatsby para blogs, Machine learning para un bot de trading y Solidity para incursionar en el mundo crypto.`,
@@ -76,19 +76,19 @@ const expTexts = {
   ],
   French: [
     [
-      "Aoû. 2021 - Nov. 2021",
+      "Août 2021 - Novembre 2021",
       `En août 2021, j’ai commencé à travailler comme responsable produit chez Voicemix inc. Ce fut une expérience courte mais intense, comme c’est souvent le cas dans la vie des start-ups. `,
       `Mon travail quotidien consistait à coordonner l’équipe UX/UI et de développement pour faire face à la fois aux histoires d’utilisateurs, aux exigences de l’équipe marketing et à la vision globale de l’entreprise. `,
       `Nous avons utilisé des méthodes de travail agiles et effectué plusieurs tests avec différents groupes d’utilisateurs. Nous savions que si nous voulions un outil qui ait un impact mondial, nous devions obtenir un produit que les gens aiment.`,
     ],
     [
-      "Sep. 2020 - May 2021",
+      "Septembre 2020 - Mai 2021",
       `J’ai commencé à développer pour montrer au monde ce que je faisais. `,
       `Lorsque je suis entré dans Voicemix, j’ai dû relever le défi de faire comprendre aux utilisateurs l’outil innovant que nous construisions. Cela m’a conduit à faire des recherches sur UX/UI, à prêter attention aux plus petits détails et à découvrir un monde qui allait au-delà de la présentation de quelques textes et boutons. `,
       `Si quelque chose prêtait à confusion, il était très probable que nous perdions des clients. Bien que je ne sois pas très bon en design, j’ai l’œil pour le jugement et je me rends vite compte que les choses ne sont pas alignées esthétiquement. `,
     ],
     [
-      "Sep. 2020 - Nov. 2021",
+      "Juin 2020 - Août 2021",
       `J’ai appris tout ce qu’il fallait pour construire une application web entièrement fonctionnelle. Le back-end est sans aucun doute ce que je maîtrise le plus. `,
       `En commençant par les services de base en se connectant avec firebase, en passant par les systèmes de paiement avec Stripe et ses Webhooks, jusqu’aux API comme twitter, slack, feuilles de calcul, services de mailing et autres. `,
       `J’ai parfois utilisé Gatsby pour les blogs, Machine learning pour un bot de trading et Solidity pour plonger dans le monde Crypto. `,
@@ -129,7 +129,7 @@ export default function Experience({ language }) {
 
   return (
     <>
-      <div className="h-16 md:h-28 w-full"></div>
+      <div className="h-14 md:h-28 w-full"></div>
       <div id="yellow" className="flex-col space-y-5">
         <div id="h3yellow" className="flex flex-row items-center space-x-1 md:space-x-4 md:px-4">
           <div className="h-0.25 flex-grow bg-palette-yellow" />
@@ -145,12 +145,12 @@ export default function Experience({ language }) {
                 className={
                   "absolute h-0.5 md:h-auto md:w-0.5 transition-all duration-700 bg-palette-yellow " +
                   (selected == 0
-                    ? "right-4 left-40 md:right-0 md:left-0 md:top-5 md:bottom-48"
+                    ? "right-1 left-36 md:right-0 md:left-0 md:top-1.5 md:bottom-48"
                     : selected == 1
-                    ? "right-8 left-24 md:right-0 md:left-0 md:top-10 md:bottom-24"
+                    ? "right-8 left-24 md:right-0 md:left-0 md:top-10 md:bottom-32"
                     : selected == 2
-                    ? "right-2 left-20 md:right-0 md:left-0 md:top-4 md:bottom-24"
-                    : "right-28 left-1.5 md:right-0 md:left-0 md:top-28 md:bottom-2")
+                    ? "right-8 left-20 md:right-0 md:left-0 md:top-10 md:bottom-20"
+                    : "right-24 left-1.5 md:right-0 md:left-0 md:top-28 md:bottom-2")
                 }
               />
             </div>

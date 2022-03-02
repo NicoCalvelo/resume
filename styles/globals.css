@@ -4,10 +4,10 @@
 
 @import url("https://fonts.googleapis.com/css?family=Inter");
 
-html,
 body {
-  padding: 0;
-  margin: 10px;
+  display: block;
+  width: auto;
+  margin: 15px;
   background-color: #2a353e;
   font-weight: 400;
   font-family: Livvic, Inter, sans-serif;

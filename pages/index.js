@@ -51,11 +51,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="See Nicolas Calvelo resume online Now!" />
         <meta name="og:title" content={siteTitle} />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="twitter:card" content="summary_large_image" />
         <title>{siteTitle}</title>
       </Head>
-      <div className="relative mx-auto max-w-5xl text-palette-grey-blue space-y-16">
+      <div className="relative mx-auto md:px-16 max-w-6xl text-palette-grey-blue space-y-16">
         <NavBar language={language} color={color} />
         <Language
           language={language}

@@ -84,10 +84,10 @@ const getSvg = (n) => {
 
 export default function Interests({ language }) {
   return (
-      <div className="flex flex-col md:flex-row justyfy-between items-center md:py-10 space-y-10 md:space-y-0 md:space-x-10 mr-5 md:mr-0 md:mx-16">
+      <div className="flex flex-col md:flex-row justyfy-between items-center md:py-10 space-y-10 md:space-y-0 mr-5 md:mr-0">
         {[0, 1, 2].map((element) => {
           return (
-            <div key={element.toString()} className="flex flex-row w-full md:w-2/6 space-x-2 items-center justify-between">
+            <div key={element.toString()} className="flex flex-row w-full md:w-2/6 space-x-2 items-center mx-6 justify-between">
               <div className="flex flex-col space-y-2 items-center w-20 md:w-24">
                 {getSvg(element)}
                 <p className="font-semibold text-base md:text-lg text-palette-grey-blue tarcking-wider">

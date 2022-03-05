@@ -24,7 +24,7 @@ export default function Contact({ language }) {
 
   return (
     <>
-      <div className="h-16 md:h-32 w-full"></div>
+      <div className="h-16 md:h-36 w-full"></div>
       <div id="grey" className="flex-col items-center space-y-14 md:space-y-28">
         <div id="h3grey" className="flex flex-row items-center space-x-1 md:space-x-4 md:px-4">
           <div className="h-0.25 w-1/5 bg-palette-grey" />

@@ -18,7 +18,7 @@ const texts = {
     `Actualmente vivo en Decazeville, Francia. Con la intención de aprender el idioma, la cultura e integrarme en la sociedad. Además con el objetivo también continuar mis estudios y seguir enriqueciendo mi carrera profesional con nuevas y desafiantes experiencias.`,
   ],
   French: [
-    "Sur mon",
+    "Sur moi",
     `Je suis né en Argentine en 2002. Je suis passionné par la nature, le sport, les start-ups et l’industrie
     technologique. Je me considère comme quelqu’un de simple et de calme, ainsi que dévoué et ambitieux.
     J’espère pouvoir vous transmettre mes apprentissages et mes valeurs tout au long de cette page.`,

@@ -1,6 +1,6 @@
 export default function SocailSideBar({ language, color }) {
   return (
-    <div className="sm:fixed flex pb-5 md:pb-0 sm:flex-col sm:space-y-5 justify-evenly items-center mx-auto sm:ml-6 bottom-0 left-0 z-20">
+    <div className="md:fixed flex pb-5 md:pb-0 md:flex-col md:space-y-5 justify-evenly items-center mx-auto md:ml-6 bottom-0 left-0 z-20">
       <a className="flex items-center w-5 h-5" target="_blank" rel="noreferrer" href="https://github.com/NicoCalvelo">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path className="transition-all duration-500"

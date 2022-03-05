@@ -4,35 +4,29 @@ import styles from "./header.module.scss";
 const texts = {
   English: [
     "Hi, my name is",
-    "Young tech-innovator.",
+    "Young tech-entrepeneur.",
     "An app for a local gym. A game based in my hometown. A web app to raise our voice and some crypto experiences.",
-    'My resume',
+    'Download my resume',
   ],
   Spanish: [
     "Hola, me llamo",
-    "Joven innovador en tecnología",
+    "Joven emprendedor en tecnología",
     "Una aplicación para un gimnasio local. Un juego basado en mi ciudad natal. Una red social para alzar nuestra voz y algunas experiencias crypto.",
-    'Mi CV',
+    'Descargar mi CV',
   ],
   French: [
     "Salut, mon nom est",
-    "Jeune innovateur en technologie.",
-    "Une application pour une salle de gym locale. Un jeu basé dans ma ville natale. Une application web pour faire entendre notre voix et des expériences Crypto.",
-    'Mon résumé',
+    "Jeune entrepreneur en technologie.",
+    "Passionné par l’innovation en technologie, et à la recherche de nouvelles expériences en Europe. Je m'apprête à continuer ma formation universitaire, ainsi que mon parcours professionnel.",
+    'Téléchargez mon CV',
   ],
 };
 
 export default function Header({ language }) {
   return (
     <div id='green' className="flex flex-col-reverse md:flex-row items-center justify-between">
-      <div className="flex-col text-left -mr-10 md:mb-16 space-y-3 md:w-3/5 z-10">
+      <div className="flex-col text-left -mr-12 md:mt-10 md:mb-16 space-y-3 md:w-4/5 z-10">
         <div className="leading-none text-palette-green">
-          <div className={styles.outer}>
-            <div className="font-medium text-sm">{texts[language][0]}</div>
-            <div className={styles.present}>
-              <div className="font-medium text-sm">{texts[language][0]}</div>
-            </div>
-          </div>
           <div className={styles.outer}>
             <h1>Nicolás Calvelo</h1>
             <div className={styles.name}>

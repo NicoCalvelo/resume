@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const texts = {
   English: ["About me", "Experience", "Contact"],
   Spanish: ["Sobre mi", "Experiencia", "Contacto"],
-  French: ["Sur mon", "Expérience", "Contact"],
+  French: ["Sur moi", "Expérience", "Contact"],
 };
 
 export default function NavBar({ language, color }) {

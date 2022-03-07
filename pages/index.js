@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 import AboutMe from "../components/home/AboutMe";
 import Contact from "../components/home/Contact";
-import Experience from "../components/home/Experience";
+import Experience from "../components/home/Experience/Experience";
 import Header from "../components/home/Header";
 import Interests from "../components/home/Interests";
 import Language from "../components/home/Language";

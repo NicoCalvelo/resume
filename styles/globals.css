@@ -44,6 +44,7 @@ h1 {
 h2 {
   font-family: Livvic;
   font-size: 36px;
+  line-height: 90%;
   font-weight: 700;
 }
 h3 {
@@ -79,6 +80,7 @@ p2 {
   }
   h2 {
     font-size: 28px;
+    line-height: 120%;
   }
   h3 {
     font-size: 38px;

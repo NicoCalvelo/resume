@@ -55,7 +55,7 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <title>{siteTitle}</title>
       </Head>
-      <div className="relative mx-auto md:px-16 max-w-6xl text-palette-grey-blue space-y-16">
+      <div className="relative mx-auto md:pl-16 md:pr-6 max-w-6xl text-palette-grey-blue space-y-16">
         <NavBar language={language} color={color} />
         <Language
           language={language}

@@ -1,7 +1,16 @@
 const texts = {
-  English: ["App development"],
-  Spanish: ["Desarrollo de app"],
-  French: ["App Développement"],
+  English: [
+    "App development",
+    "At the age of 17, I entered the world of apps by developing one for a local gym. I started to gain knowledge about databases and user experiences.",
+  ],
+  Spanish: [
+    "Desarrollo de app",
+    "A los 17 años, entré en el mundo de las aplicaciones desarrollando una para un gimnasio local. Comencé a adquirir conocimientos sobre bases de datos y experiencias de usuario.",
+  ],
+  French: [
+    "App Développement",
+    "À l’âge de 17 ans, je suis entré dans le monde des apps en développant une pour une salle de gym locale. J'ai commencé à acquérir des connaissances sur les bases de données et les expériences des utilisateurs.",
+  ],
 };
 const frameworks = ["Uniy3D", "C#", "GIMP", "Windows", "Android"];
 
@@ -20,9 +29,9 @@ const expTexts = {
   ],
   French: [
     "Février 2019 - Décembre 2019",
-    `Mon introduction au monde de la programmation a été en 2018 à travers les jeux. En septembre 2020, j’ai lancé sur Google Play un jeu de plateforme basé dans ma ville natale. De l’idée, du design à la mécanique et aux animations. `,
-    `Sans aucun doute, le développement de jeux est le plus amusant. Les erreurs sur le web peuvent être un casse-tête, dans les jeux peuvent conduire à des rires et des mystères. `,
-    `Quand j’en ai envie, comme hobby, je reviens travailler sur un projet simple et court pour apprendre et m’amuser. `,
+    `Mon introduction au monde de la programmation a été en 2018 à travers les jeux. En septembre 2020, j’ai lancé sur Google Play un jeu de plateforme basé dans ma ville natale. De l’idée, du design à la mécanique et aux animations.`,
+    `Sans aucun doute, le développement de jeux est le plus amusant. Les erreurs sur le web peuvent être un casse-tête, dans les jeux peuvent conduire à des rires et des mystères.`,
+    `Quand j’en ai envie, comme hobby, je reviens travailler sur un projet simple et court pour apprendre et m’amuser.`,
   ],
 };
 
@@ -32,9 +41,7 @@ export default function CefideExperience({ language }) {
       <p className="absolute py-0.5 -top-4 bg-palette-yellow rounded-full px-4 text-palette-black left-4 font-bold text-xl tracking-wider">
         CEFiDe
       </p>
-      <p className="text-sm md:text-base font-light tracking-wide">
-        À l’âge de 17 ans, je suis entré dans le monde des apps en développant une pour une salle de gym locale. J'ai
-        commencé à acquérir des connaissances sur les bases de données et les expériences des utilisateurs.
+      <p className="text-sm md:text-sm font-light tracking-wide">{texts[language][1]}
       </p>
       <div className="flex flex-col md:flex-row items-center md:space-x-2 space-y-5 md:space-y-0 md:h-64 pt-5">
         <div className="flex flex-row-reverse md:flex-col text-palette-yellow text-opacity-50 items-center w-full md:w-min h-full">
@@ -52,28 +59,21 @@ export default function CefideExperience({ language }) {
           {texts[language][0]}
         </div>
         <div id="experienceText" className="md:w-5/6 leading-snug px-2 space-y-1.5">
-          <p className="font-light text-xs pt-5 pb-1">{expTexts[language][3][0]}</p>
+          <p className="font-light text-xs pt-5 pb-1">{expTexts[language][0]}</p>
           {expTexts[language].map((e) => {
-            return expTexts[language].indexOf(e) == 0 ? (
-              <></>
-            ) : (
-              <p key={e} className="text-justify">
-                {e}
-              </p>
-            );
+            if (expTexts[language].indexOf(e) != 0) {
+              return (
+                <p key={e.toString()} className="text-justify">
+                  {e}
+                </p>
+              );
+            }
           })}
           <ul className="grid leading-snug pt-6 text-xs md:text-sm font-semibold md:font-bold md:tracking-wider gap-2 grid-cols-3">
             {frameworks.map((e) => {
               return (
                 <li key={frameworks.indexOf(e).toString()} className="flex flex-row items-center space-x-2">
-                  <svg
-                    className="flex-shrink-0"
-                    width="7"
-                    height="9"
-                    viewBox="0 0 20 23"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                  <svg width="7" height="9" viewBox="0 0 20 23">
                     <path d="M19.375 11.5L0.624999 22.3253L0.625 0.674682L19.375 11.5Z" opacity="70%" fill="#FFEC40" />
                   </svg>
                   <div>{e}</div>

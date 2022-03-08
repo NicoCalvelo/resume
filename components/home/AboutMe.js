@@ -49,7 +49,7 @@ export default function AboutMe({ language }) {
 
   return (
     <>
-      <div className="h-14 md:h-24 w-full"></div>
+      <div className="h-14 md:h-28 w-full"></div>
       <div id="orange" className="flex flex-col space-y-5">
         <div id="h3" className="flex flex-row items-center space-x-1 md:space-x-4 md:px-4">
           <h3>{texts[language][0]}</h3>

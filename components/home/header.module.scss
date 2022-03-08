@@ -29,17 +29,6 @@
   position: relative;
   color: rgba(128, 128, 128, 0.25);
 }
-
-.present {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  color: #2feb98;
-  opacity: 0;
-  animation: slide 3s ease-in-out .8s forwards;
-}
-
 .name {
   position: absolute;
   top: 0;

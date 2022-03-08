@@ -16,9 +16,8 @@ export default function Experience({ language }) {
     const observer = new IntersectionObserver((entries) => {
       // Loop over the entries
       entries.forEach((entry) => {
-        // If the element is visible
+        // If the element is visible -> Add the animation class
         if (entry.isIntersecting) {
-          // Add the animation class
           entry.target.classList.add(styles.reveal);
         }
       });

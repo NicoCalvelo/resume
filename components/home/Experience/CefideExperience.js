@@ -40,7 +40,7 @@ export default function CefideExperience({ language }) {
       </p>
       <p className="text-sm md:text-sm font-light tracking-wide">{texts[language][1]}
       </p>
-      <div className="flex flex-col md:flex-row items-center md:space-x-2 space-y-5 md:space-y-0 md:h-64 pt-5">
+      <div className="flex flex-col md:flex-row items-center md:space-x-2 space-y-5 md:space-y-0 md:h-64 mt-5">
         <div className="flex flex-row-reverse md:flex-col text-palette-yellow text-opacity-50 items-center w-full md:w-min h-full">
           <p2 className="rounded-full bg-palette-black border-2 border-palette-yellow border-opacity-50 px-2.5 py-1">
             2020

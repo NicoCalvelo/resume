@@ -1,37 +1,34 @@
 const texts = {
   English: [
     "App development",
-    "At the age of 17, I entered the world of apps by developing one for a local gym. I started to gain knowledge about databases and user experiences.",
+    "CEFiDe is a gym in the city where I was born and lived my childhood. Its owner, a friend of my father’s, learned that I was taking an application development course and hired me to do what would be my first application project. With a little uncertainty and doubting my abilities, I set to work, without even imagining how much I would dive into this world after a few months.",
   ],
   Spanish: [
     "Desarrollo de app",
-    "A los 17 años, entré en el mundo de las aplicaciones desarrollando una para un gimnasio local. Comencé a adquirir conocimientos sobre bases de datos y experiencias de usuario.",
+    "CEFiDe es un gimnasio de la ciudad donde nací y viví mi ñiñez. Su dueño, amigo de mi padre, al enterarse que estaba realizando un curso de desarrollo de app me contrato para realizar lo que seria mi primer proyecto de app. Con un poco de incertidumbre y dudando de mis capacidades me puse manos a la obra, sin siquiera imaginar cuanto me adentraria en este mundo al cabo de unos meses.",
   ],
   French: [
     "App Développement",
-    "À l’âge de 17 ans, je suis entré dans le monde des apps en développant une pour une salle de gym locale. J'ai commencé à acquérir des connaissances sur les bases de données et les expériences des utilisateurs.",
+    "CEFiDe est un gymnase de la ville où je suis né et où j’ai vécu mon enfance. Son propriétaire, ami de mon père, a appris qu’il prenait un cours de développement d’applications et m’a engagé pour faire ce qui serait mon premier projet d’app. Avec un peu d’incertitude et doutant de mes capacités, je me mis au travail, sans même imaginer combien je m’aventurerais dans ce monde après quelques mois.",
   ],
 };
-const frameworks = ["Uniy3D", "C#", "GIMP", "Windows", "Android"];
+const frameworks = ["Flutter", "UX", "GIMP", "Git/Github", "AWS (cloud)", "Windows", "Android"];
 
 const expTexts = {
   English: [
     "Febraury 2019 - December 2020",
-    `My introduction to the world of programming was in 2018 through games. In September 2020 I launched on Google Play a platform game based in my hometown. From idea, design to mechanics and animations. `,
-    `Without a doubt, game development is the most fun. Mistakes that on the web can be a headache, in games can lead to laughter and mysteries. `,
-    `When I want to, as a hobby, I go back to work on some simple and short project to learn and have fun.`,
+    `My weekly job was to make as much progress as possible in the gym and customer requirements. This led me to make a news feed about the gym, a system of shifts, loading and viewing of gym routines, and also an administration program for PC where to manage the entire database.`,
+    `I have certainly learned a lot about application development, however what served me most was to start rubbing shoulders with customers and the daily demand of the real world, learning to prioritize, segment and other skills that escape a programmer’s technicality.`,
   ],
   Spanish: [
     "Febrero 2019 - Diciembre 2019",
-    `Mi introducción al mundo de la programación fue en 2018 a través de los juegos. En septiembre del 2020 llegué a lanzar en Google Play un juego de plataformas basado en mi ciudad natal. Desde la idea, el diseño hasta la mecánica y las animaciones.`,
-    `Sin duda, el desarrollo de juegos es lo más divertido. Los errores que en la web pueden ser un dolor de cabeza, en los juegos pueden dar lugar a risas y misterios.`,
-    `Cuando me dan ganas, como hobby, vuelvo a trabajar en algún proyecto sencillo y corto para aprender y divertirme.`,
+    `Mi trabajo semanal era hacer el mayor progreso posible en el gimnasio y los requisitos del cliente. Esto me llevó a hacer un feed de noticias sobre el gimnasio, un sistema de turnos, carga y visualización de rutinas de gimnasio, y también un programa de administración para PC donde gestionar toda la base de datos.`,
+    `Sin duda he aprendido mucho sobre el desarrollo de aplicaciones, sin embargo, lo que más me sirvió fue empezar a codearme con los clientes y la demanda diaria del mundo real, aprender a priorizar, segmentar y otras habilidades que escapan al tecnicismo de un programador.`,
   ],
   French: [
     "Février 2019 - Décembre 2019",
-    `Mon introduction au monde de la programmation a été en 2018 à travers les jeux. En septembre 2020, j’ai lancé sur Google Play un jeu de plateforme basé dans ma ville natale. De l’idée, du design à la mécanique et aux animations.`,
-    `Sans aucun doute, le développement de jeux est le plus amusant. Les erreurs sur le web peuvent être un casse-tête, dans les jeux peuvent conduire à des rires et des mystères.`,
-    `Quand j’en ai envie, comme hobby, je reviens travailler sur un projet simple et court pour apprendre et m’amuser.`,
+    `Mon travail hebdomadaire était de faire le plus de progrès possible dans le gymnase et les exigences des clients. Cela m’a amené à faire un flux de nouvelles sur le gymnase, un système de quarts de travail, le chargement et la visualisation des routines de gymnase, et aussi un programme d’administration pour PC où gérer la base de données entière.`,
+    `J’ai certainement beaucoup appris sur le développement d’applications, mais ce qui m’a le plus servi était de commencer à côtoyer les clients et la demande quotidienne du monde réel, apprendre à prioriser, segmenter et d’autres compétences qui échappent à la technicité d’un programmeur.`,
   ],
 };
 

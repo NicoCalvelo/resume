@@ -19,7 +19,7 @@ const buttons = {
   French: ["Chef de Project", "Front-end", "Back-end"],
 };
 const frameworks = [
-  ["Reports", "Testing", "Agile", "User Stories", "Mail Campaigns"],
+  ["Protuct Strategy", "Testing", "Agile", "User Stories", "Mail Campaigns"],
   ["Flutter", "HTML", "CSS", "Tailwind", "Figma", "UX/UI Basics"],
   ["Javascript", "React", "Next.js", "PHP Basics", "Firebase", "Database", "Analytics", "Auth", "Payments - Stripe"],
 ];

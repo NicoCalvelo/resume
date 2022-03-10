@@ -104,11 +104,11 @@ export default function Projects({ language }) {
           <div className="relative mb-4 w-5/6 md:mb-0 md:w-4/6">
             <div className={styles.backgroundImg} />
             <Image
-              priority
+              quality="100"
               className="rounded"
               src={projectsSlots[0].img}
-              width={550}
-              height={290}
+              width={1900}
+              height={969.43}
               alt="header_img"
             />
           </div>
@@ -120,9 +120,8 @@ export default function Projects({ language }) {
               {projectsSlots[0]['description'][language]}
               </p>
             </h2>
-
             <a
-              href="https://drive.google.com/file/d/1WNBlAVMw6DmiBYXgGzJGvRs06Zsiu-v8/view?usp=sharing"
+              href=""
               target="_blank"
               rel="noreferrer"
               className="action-btn-purple w-28 "
@@ -130,30 +129,29 @@ export default function Projects({ language }) {
               {texts[language][1]}
             </a>
           </div>
-          <div className="absolute right-2 -top-2 rounded-full bg-palette-purple text-xs font-semibold px-4 py-1 text-palette-black">
+          <div className="absolute right-2 -top-2 rounded-full bg-palette-purple text-xs font-semibold px-4 py-1 text-palette-black transition transition-all duration-500 hover:bg-opacity-75 hover:ring-2 ring-opacity-50 ring-palette-purple">
             LIVE
           </div>
         </div>
 
-        <div className="flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between justify-items-center gap-8 md:gap-5 lg:gap-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between justify-items-center gap-8 md:gap-5 lg:gap-2">
           {[1, 2, 3].map((e) => {
             return (
-              <div key={e.toString()} className="relative w-full max-w-md md:max-w-none flex flex-row border border-palette-purple rounded">
+              <div key={e.toString()} className="relative w-full max-w-sm md:max-w-none flex flex-row border border-palette-purple bottom-0.5 shadow cursor-pointer hover:shadow-xl rounded transition transition-all duration-500 hover:bg-palette-purple hover:bg-opacity-10 hover:ring-2 ring-opacity-50 ring-palette-purple">
                 <Image
-                  priority
-                  className="rounded flex-grow"
+                  quality={100}
+                  className="rounded-l"
                   src={projectsSlots[e].img}
                   width={160}
                   height={140}
                   objectFit='cover'
                   alt="project-slot-image"
                 />
-                <div className="flex flex-col w-52 lg:w-40 pl-2 py-2 pr-2 justify-evenly">
+                <div className="flex w-2/4 flex-col pl-2 py-2 pr-2 justify-evenly">
                   <h2 className="text-xl leading-none font-extrabold">{projectsSlots[e].title}</h2>
                   <p className="text-xs">{projectsSlots[e]['description'][language]}</p>
-                  <a className="text-sm text-palette-purple italic hover:underline">{texts[language][1]}</a>
                 </div>
-                <div className="absolute right-2 -bottom-3 rounded-full bg-palette-purple text-xs font-semibold px-4 py-1 text-palette-black">
+                <div className="absolute right-2 -bottom-3 rounded-full bg-palette-purple text-xs font-semibold px-4 py-1 text-palette-black transition transition-all duration-500 hover:bg-opacity-75 hover:ring-2 ring-opacity-50 ring-palette-purple">
                 {projectsSlots[e]['timePeriod'][language]}
                 </div>
               </div>

@@ -95,7 +95,7 @@ export default function VmxExperience({ language }) {
   }, [selected]);
 
   return (
-    <div className="relative shadow-xl flex flex-col pl-4 md:pl-8 pr-8 md:pr-14 pb-10 md:pb-16 pt-8 md:pt-10 border-dashed border-2 border-opacity-50 rounded-lg border-palette-yellow">
+    <div className="relative shadow-xl flex flex-col pl-5 md:pl-8 pr-10 md:pr-14 pb-10 md:pb-16 pt-10 border-dashed border-2 border-opacity-50 rounded-lg border-palette-yellow">
       <a
         href="https://www.voicemix.io/"
         target="_blank"
@@ -118,8 +118,8 @@ export default function VmxExperience({ language }) {
           />
         </svg>
       </a>
-      <p className="text-sm md:text-sm font-light tracking-wide">{texts[language][0]}</p>
-      <div className="flex flex-col md:flex-row items-center md:space-x-2 space-y-5 md:space-y-0 md:h-80 ">
+      <p className="text-sm font-light text-justify md:tracking-wide">{texts[language][0]}</p>
+      <div className="flex flex-col pt-2 md:flex-row items-center md:space-x-2 space-y-5 md:space-y-0 md:h-80 ">
         <div className="flex flex-row-reverse md:flex-col text-palette-yellow text-opacity-50 items-center w-full md:w-min h-full">
           <p2 className="rounded-full bg-palette-black border-2 border-palette-yellow border-opacity-50 px-2.5 py-1">
             2022
@@ -160,7 +160,7 @@ export default function VmxExperience({ language }) {
             );
           })}
         </ul>
-        <div id="experienceText" className="md:w-5/6 leading-snug px-2 space-y-1.5">
+        <div id="experienceText" className="md:w-5/6 leading-snug md:px-2 space-y-1.5">
           <p className="font-light text-xs pt-5 pb-1">{expTexts[language][selected][0]}</p>
           {expTexts[language][selected].map((e) => {
             return expTexts[language][selected].indexOf(e) == 0 ? <></> : <p className="text-justify">{e}</p>;

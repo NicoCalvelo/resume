@@ -41,7 +41,7 @@ export default function Experience({ language }) {
           <h3>{texts[language][0]}</h3>
         </div>
         <VmxExperience language={language} />
-        <div className="h-8" />
+        <div className="h-2 md:h-8" />
         <CefideExperience language={language} />
       </div>
     </>

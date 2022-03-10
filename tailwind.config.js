@@ -12,7 +12,8 @@ module.exports = {
         'palette-grey-blue': '#B6D0D2',
         'palette-black': '#2A353E',
         'palette-orange': '#EB784B',    
-        'palette-yellow': '#FFEC40',
+        'palette-yellow': '#FFEC40',  
+        'palette-purple': '#EB2FA0',
         'palette-grey': '#DFDFDF',
       },
       spacing: {

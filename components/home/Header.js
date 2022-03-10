@@ -44,7 +44,7 @@ export default function Header({ language }) {
             href="https://drive.google.com/file/d/1WNBlAVMw6DmiBYXgGzJGvRs06Zsiu-v8/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
-            className="action-btn"
+            className="action-btn-green"
           >
             {texts[language][3]}
           </a>

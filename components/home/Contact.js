@@ -24,12 +24,12 @@ export default function Contact({ language }) {
 
   return (
     <>
-      <div className="h-16 md:h-36 w-full"></div>
+      <div className="h-16 md:h-40 w-full"></div>
       <div id="grey" className="flex-col items-center space-y-14 md:space-y-28">
         <div id="h3grey" className="flex flex-row items-center space-x-1 md:space-x-4 md:px-4">
-          <div className="h-0.25 w-1/5 bg-palette-grey" />
-          <h3>{texts[language][0]}</h3>
           <div className="h-0.25 flex-grow bg-palette-grey" />
+          <h3>{texts[language][0]}</h3>
+          <div className="h-0.25 w-1/5 bg-palette-grey" />
         </div>
         <div className="flex flex-col md:flex-row md:px-10 h-48">
           <div className="flex flex-col m-2 space-y-5 justify-center items-center flex-grow border px-2.5 pt-5 pb-4 border-palette-grey rounded hover:pb-6 md:hover:-mb-4 hover:mt-0 hover:shadow-2xl transition-all duration-300">

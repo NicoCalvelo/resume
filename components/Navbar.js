@@ -86,7 +86,7 @@ export default function NavBar({ language, color }) {
                 ? "bg-palette-orange"
                 : color == "#FFEC40"
                 ? "bg-palette-yellow"
-                : "bg-palette-grey")
+                : color=='#EB2FA0' ?'bg-palette-purple' :"bg-palette-grey")
             }
           />
           <textbtn onClick={toExperience}>{texts[language][1]}</textbtn>
@@ -99,7 +99,7 @@ export default function NavBar({ language, color }) {
                 ? "bg-palette-orange"
                 : color == "#FFEC40"
                 ? "bg-palette-yellow"
-                : "bg-palette-grey")
+                : color=='#EB2FA0' ?'bg-palette-purple' :"bg-palette-grey")
             }
           />
           <textbtn onClick={toContact}>{texts[language][2]}</textbtn>

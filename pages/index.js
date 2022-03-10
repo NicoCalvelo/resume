@@ -6,6 +6,7 @@ import Experience from "../components/home/Experience/Experience";
 import Header from "../components/home/Header";
 import Interests from "../components/home/Interests";
 import Language from "../components/home/Language";
+import Projects from "../components/home/Projects/Projects";
 import NavBar from "../components/Navbar";
 import SocailSideBar from "../components/SocialSideBar";
 
@@ -33,6 +34,8 @@ export default function Home() {
             setColor("#EB784B");
           } else if (entry.target.id === "yellow") {
             setColor("#FFEC40");
+          } else if (entry.target.id === "purple") {
+            setColor("#EB2FA0");
           } else if (entry.target.id === "grey") {
             setColor("#DFDFDF");
           }
@@ -42,6 +45,7 @@ export default function Home() {
     observer.observe(document.getElementById("green"));
     observer.observe(document.getElementById("orange"));
     observer.observe(document.getElementById("yellow"));
+    observer.observe(document.getElementById("purple"));
     observer.observe(document.getElementById("grey"));
   }, []);
 
@@ -68,6 +72,7 @@ export default function Home() {
         <AboutMe language={language} />
         <Interests language={language} />
         <Experience language={language} />
+        <Projects language={language} />
         <Contact language={language} />
         <SocailSideBar color={color} />
       </div>

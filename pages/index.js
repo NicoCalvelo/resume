@@ -9,6 +9,7 @@ import Language from "../components/home/Language";
 import Projects from "../components/home/Projects/Projects";
 import NavBar from "../components/Navbar";
 import SocailSideBar from "../components/SocialSideBar";
+import ProjectModal from "../components/home/Modals/projectModal";
 
 const siteTitle = "Nico Calvelo";
 
@@ -50,7 +51,7 @@ export default function Home() {
   }, []);
 
   return (
-    <>
+    <body id='mainDiv' className="transition transition-all duration-1000">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="See Nicolas Calvelo resume online Now!" />
@@ -59,7 +60,8 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <title>{siteTitle}</title>
       </Head>
-      <div className="relative mx-auto md:pl-16 md:pr-6 max-w-6xl text-palette-grey-blue space-y-16">
+      <div  className="relative mx-auto md:pl-16 md:pr-6 max-w-6xl text-palette-grey-blue space-y-16">
+       
         <NavBar language={language} color={color} />
         <Language
           language={language}
@@ -68,6 +70,7 @@ export default function Home() {
             localStorage.setItem("language", newLanguage);
           }}
         />
+        
         <Header language={language} />
         <AboutMe language={language} />
         <Interests language={language} />
@@ -76,6 +79,7 @@ export default function Home() {
         <Contact language={language} />
         <SocailSideBar color={color} />
       </div>
-    </>
+      <ProjectModal language={language} />
+    </body>
   );
 }

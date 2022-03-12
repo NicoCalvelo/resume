@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import styles from "./projects.module.scss";
 import Image from "next/image";
+import { openProjectModal } from "../Modals/projectModal";
 
 const texts = {
   English: ["Projects", "See more"],
@@ -19,7 +20,7 @@ const projectsSlots = [
         img: '/images/cryptoTowers.jpg',
     },
     {
-        title:'Trading bot',
+        title:'Trading Bot',
         description: {
             English: 'The uncertainty of cryptocurrencies',
             Spanish: 'La incertidumbre de las criptomonedas',
@@ -47,7 +48,7 @@ const projectsSlots = [
         }    
     },
     {
-        title:'Te busco',
+        title:'Te Busco',
         description: {
             English: 'A mobile game based in my hometown',
             Spanish: 'Un juego basado en mi ciudad natal',
@@ -63,6 +64,7 @@ const projectsSlots = [
 ]
 
 export default function Projects({ language }) {
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       // Loop over the entries
@@ -120,14 +122,12 @@ export default function Projects({ language }) {
               {projectsSlots[0]['description'][language]}
               </p>
             </h2>
-            <a
-              href=""
-              target="_blank"
-              rel="noreferrer"
+            <button
+              onClick={() => {openProjectModal(projectsSlots[0].title)}}
               className="action-btn-purple w-28 "
             >
               {texts[language][1]}
-            </a>
+            </button>
           </div>
           <div className="absolute right-2 -top-2 rounded-full bg-palette-purple text-xs font-semibold px-4 py-1 text-palette-black transition transition-all duration-500 hover:bg-opacity-75 hover:ring-2 ring-opacity-50 ring-palette-purple">
             LIVE
@@ -137,7 +137,7 @@ export default function Projects({ language }) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between justify-items-center gap-8 md:gap-5 lg:gap-2">
           {[1, 2, 3].map((e) => {
             return (
-              <div key={e.toString()} className="relative w-full max-w-sm md:max-w-none flex flex-row border border-palette-purple bottom-0.5 shadow cursor-pointer hover:shadow-xl rounded transition transition-all duration-500 hover:bg-palette-purple hover:bg-opacity-10 hover:ring-2 ring-opacity-50 ring-palette-purple">
+              <div onClick={() => {openProjectModal(projectsSlots[e].title)}} key={e.toString()} className="relative w-full max-w-sm md:max-w-none flex flex-row border border-palette-purple bottom-0.5 shadow cursor-pointer hover:shadow-xl rounded transition transition-all duration-500 hover:bg-palette-purple hover:bg-opacity-10 hover:ring-2 ring-opacity-50 ring-palette-purple">
                 <Image
                   quality={100}
                   className="rounded-l"

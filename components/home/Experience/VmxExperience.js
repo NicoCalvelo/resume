@@ -3,20 +3,26 @@ import styles from "./experience.module.scss";
 
 const texts = {
   English: [
-    "Voicemix is a start-up in technology.  It was born as a platform to empower valuable messages and has gradually entered the world of Blockchain and NFTs. I joined the company in early 2020 as a programmer thanks to knowing the founder. In early 2021 we managed to consolidate a team of 14 people and thus face multiple challenges. From the conception and assembly of the product, to marketing campaigns at the Latin American level and funding rounds at Draper University, California.",
+    "The VoiceMix Start-up was born as a tool to amplify and share the messages of value in our society, in order to inform and sensitize users on different topics. It thus makes it possible to connect people with common values, such as human rights, ecology and women’s rights, among others.",
+    "In 2020 I joined the company as a programmer and co-founder of the team. We reached a staff of 14 in 2021, allowing us to cope with a multitude of tasks. From product design and assembly, through Latin American marketing campaigns, to rounds of funding at Draper University in California.",
+    "The Company is gradually evolving, and in the news it is focused on Blockchain and NFT’s projects.",
   ],
   Spanish: [
-    "Voicemix es una start-up en tecnología.  Nació como una plataforma para potenciar mensajes valiosos y ha entrado gradualmente en el mundo de Blockchain y NFTs. Me uní a la empresa a principios de 2020 como programador gracias a conocer al fundador. A principios de 2021 logramos consolidar un equipo de 14 personas y así enfrentar múltiples desafíos. Desde la concepción y armado del producto, hasta campañas de marketing a nivel latinoamericano y rondas de funding en la Universidad Draper, California.",
+    "La Startup VoiceMix nace como una herramienta para amplificar y compartir mensajes de valor en nuestra sociedad, con el fin de informar y concienciar a los usuarios sobre diferentes temas. Así, permite relacionar a las personas con valores comunes, como los derechos humanos, la ecología y los derechos de la mujer, entre otros.",
+    "En 2020 me uní a la empresa como programador y cofundador del equipo. Alcanzamos una plantilla de 14 personas en 2021, lo que nos permitió hacer frente a una multitud de tareas. Desde el diseño y montaje del producto, pasando por campañas de marketing a nivel latinoamericano, hasta las rondas de financiación en la Universidad Draper de California.",
+    "La start-up evoluciona progresivamente, y en la actualidad se centra en proyectos en Blockchain y NFT’s.",
   ],
   French: [
-    "Voicemix est une start-up technologique.  Il est né comme une plate-forme pour amplifier messages de valeur et est progressivement entré dans le monde de Blockchain et NFTs. J’ai rejoint l’entreprise début 2020 en tant que programmeur grâce à la connaissance du fondateur. Au début de 2021, nous avons réussi à regrouper une équipe de 14 personnes et ainsi faire face à de multiples défis. De la conception et de l’assemblage du produit, aux campagnes de marketing au niveau latino-américain et aux rondes de financement à l’Université Draper, en Californie.",
+    "La Start-up VoiceMix est née comme un outil permettant d'amplifier et partager les messages de valeur dans notre société, afin d' informer et conscientiser les utilisateurs sur différents sujets. Elle permet ainsi de mettre en relation des personnes avec des valeur communs, tels que les droits humains, l'écologie et les droits de la femme, entre autres.",
+    "En 2020 j’ai rejoint l’entreprise en tant que programmateur et cofondateur de l'équipe de travail. Nous avons atteint un effectif de 14 personnes en 2021, nous permettant de faire face à une multitude de tâches. De la conception et de l’assemblage du produit, en pasant par des campagnes de marketing sur le plan Latino-Américain, jusqu’aux rondes de financement à l’Université Draper en Californie.",
+    "La Société évolue progressivement, et dans l'actualité elle est centrée sur des projets en Blockchain et NFT’s.",
   ],
 };
 
 const buttons = {
   English: ["Product Manager", "Front-end", "Back-end"],
   Spanish: ["Manager de Producto", "Front-end", "Back-end"],
-  French: ["Chef de Project", "Front-end", "Back-end"],
+  French: ["Responsable de Projet ", "Front-end", "Back-end"],
 };
 const frameworks = [
   ["Protuct Strategy", "Testing", "Agile", "User Stories", "Mail Campaigns"],
@@ -28,9 +34,9 @@ const expTexts = {
   English: [
     [
       "August 2021 - December 2021",
-      `In August 2021 I started my job as a product manager at Voicemix inc. It was a short but otherwise intense experience, as it usually is in the life of start-ups. `,
-      `My daily job was to coordinate the UX/UI and development team to address both user stories, marketing team requirements and the overall vision of the company. `,
-      `We have used agile work methodologies and conducted multiple tests with different user groups. We knew that if we wanted a tool that impacted globally, we had to get a product that people loved.`,
+      `In March 2021 I started my work as a product manager, it was an intense experience as it is the case in a start-up.`,
+      `My daily job was to coordinate a team of four people, to carry out the product development on the UX/UI, back and front end aspects. All in direct contact with the marketing team and management.`,
+      `We have implemented agile and responsive working methods, allowing us to regularly test the progress of our activity with different user groups. To create a real impact, we had to correlate technical possibilities with user expectations.`,
     ],
     [
       "September 2020 - May 2021",
@@ -40,16 +46,15 @@ const expTexts = {
     [
       "June 2020 - August. 2021",
       `I have learned everything necessary to build a fully functional web app. Without a doubt the back-end is the area I master the most.`,
-      `Starting with basic services connecting with firebase, passing through payment systems with Stripe and its webhooks, up to APIs such as twitter, slack, spreadsheets, mailing campaigns and others.`,
-      `I have occasionally used Gatsby for blogs, BigQuery for analytics, and Solidity to venture into the crypto world.`,
+      `During this period I worked with tools like firebase, payment systems with Stripe and API’s on Twitter or Slack. In the same way, I was able to use Gatsby for the creation of blogs, BigQuery for the extraction of data and Solidity to dive into the Crypto world.`,
     ],
   ],
   Spanish: [
     [
       "Agosto 2021 - Diciembre 2021",
-      `En agosto del 2021 comenzó mi trabajo como manager de producto en Voicemix inc. Fue una experiencia corta pero por demás de intensa, como suele ser en la vida de las start-ups.`,
-      `Mi trabajo diario consistía en coordinar al equipo de UX/UI y de desarrollo para afrontar tanto las historias de usuarios, los requisitos del equipo de marketing y la vision general de la compañía.`,
-      `Hemos utilizado metodologías de trabajo agiles y realizado multiples testeos con diferentes grupos de usuarios. Sabíamos que si queríamos una herramienta que impacte a nivel mundial debíamos conseguir un producto que la gente ame.`,
+      `En marzo de 2021 comencé mi trabajo como gerente de producto, fue una experiencia intensa como es el caso en una start-up.`,
+      `Mi trabajo diario consistía en coordinar un equipo de cuatro personas para llevar a cabo el desarrollo del producto en los aspectos UX/UI, back y front end. Todo ello en relación directa con el equipo de marketing y la dirección.`,
+      `Hemos implementado métodos de trabajo ágiles y responsivos, lo que nos permite comprobar periódicamente los avances de nuestro negocio con diferentes grupos de usuarios. Para crear un impacto real, tuvimos que correlacionar las posibilidades técnicas con las expectativas de los usuarios.`,
     ],
     [
       "Septiembre 2020 - Mayo 2021",
@@ -59,27 +64,25 @@ const expTexts = {
     [
       "Junio 2020 - Agosto 2021",
       `He aprendido todo lo necesario para construir una app web completamente funcional. Sin duda el back-end es el area que mas domino.`,
-      `Comenzando por los servicios básicos conectando con firebase, pasando por sistemas de pagos con Stripe y sus webhooks, hasta APIs como twitter, slack, hojas de calculo, campañas de mailing y otros.`,
-      `Ocasionalmente he usado Gatsby para blogs, BigQuery para analiticos y Solidity para incursionar en el mundo crypto.`,
+      `Durante este tiempo he trabajado con herramientas como Firebase, sistemas de pago con Stripe y API’s en Twitter o Slack. Del mismo modo, pude utilizar Gatsby para la creación de blogs, BigQuery para la extracción de datos y Solidity para sumergirme en el mundo Crypto.`,
     ],
   ],
   French: [
     [
       "Août 2021 - Décembre 2021",
-      `En août 2021, j’ai commencé à travailler comme responsable produit chez Voicemix inc. Ce fut une expérience courte mais intense, comme c’est souvent le cas dans la vie des start-ups. `,
-      `Mon travail quotidien consistait à coordonner l’équipe UX/UI et de développement pour faire face à la fois aux user stories, aux exigences de l’équipe marketing et à la vision globale de l’entreprise. `,
-      `Nous avons utilisé des méthodes de travail agiles et effectué plusieurs tests avec différents groupes d’utilisateurs. Nous savions que si nous voulions un outil qui ait un impact mondial, nous devions obtenir un produit que les gens aiment.`,
+      `En mars 2021 j’ai commencé mon travail comme responsable de produit, cela a été une expérience intense comme c'est le cas dans une Start-up.`,
+      `Mon travail quotidien consistait à coordonner un équipe de quatre personnes, pour mener à bien le développement du produit sur les aspects UX/UI, back et front end. Le tout, en relation directe avec l’équipe marketing et la direction.`,
+      `Nous avons mis en place des méthodes de travail agiles et responsives, permettant de tester régulièrement les avancements de notre activité avec différents groupes d’utilisateurs. Pour créer un réel impact, nous devions corréler les possibilités techniques avec l’attente des utilisateurs.`,
     ],
     [
       "Septembre 2020 - Mai 2021",
-      `Lorsque je suis entré dans Voicemix, j’ai dû relever le défi de faire comprendre aux utilisateurs l’outil innovant que nous construisions. Cela m’a conduit à faire des recherches sur UX/UI, à prêter attention aux plus petits détails et à découvrir un monde qui allait au-delà de la présentation de quelques textes et boutons. `,
-      `Si quelque chose prêtait à confusion, il était très probable que nous perdions des clients. Bien que je ne sois pas très bon en design, j’ai l’œil pour le jugement et je me rends vite compte que les choses ne sont pas alignées esthétiquement. `,
+      `De mon entrée à VoiceMix, j’ai travaillé pour montrer l’outil innovant que nous étions en train de développer aux futurs utilisateurs. Cela m’a conduit à faire des recherches sur le UX/UI, à prêter attention aux plus petits détails et à découvrir un monde qui allait au-delà de la présentation de quelques textes et boutons.`,
+      `Si quelque chose prêtait à confusion, il était très probable que nous perdions des clients. Bien que je ne sois pas très bon en design, j’ai l’œil pour le jugement et je me rends vite compte que les choses ne sont pas alignées esthétiquement.`,
     ],
     [
       "Juin 2020 - Août 2021",
-      `J’ai appris tout ce qu’il faut pour construire une application web entièrement fonctionnelle. Le back-end est sans aucun doute la zone que je maîtrise le plus.`,
-      `En commençant par les services de base en se connectant avec firebase, en passant par les systèmes de paiement avec Stripe et ses Webhooks, jusqu’aux API comme twitter, slack, feuilles de calcul, campagnes de mailing et autres.`,
-      `’ai parfois utilisé Gatsby pour les blogs, BigQuery pour les analyses et Solidity pour plonger dans le monde Crypto.`,
+      `Grâce au travail effectué sur VoiceMix, j'ai pu développer les compétences nécessaires pour construire une application web entièrement fonctionnelle. Le back-end est sans aucun doute le domaine d'activité que je maîtrise le mieux à ce jour.`,
+      `Pendant cette période j’ai travaillé avec des outils comme firebase, systèmes de paiement avec Stripe et API’s sur Twitter ou Slack. A ce même titre, j’ai pu utiliser Gatsby pour la création des blogs, BigQuery pour l’extraction des données et Solidity pour plonger dans le monde Crypto.`,
     ],
   ],
 };
@@ -95,7 +98,7 @@ export default function VmxExperience({ language }) {
   }, [selected]);
 
   return (
-    <div className="relative shadow-xl flex flex-col pl-5 md:pl-8 pr-10 md:pr-14 pb-10 md:pb-16 pt-10 border-dashed border-2 border-opacity-50 rounded-lg border-palette-yellow">
+    <div className="relative shadow-xl flex flex-col pl-5 md:pl-8 pr-10 md:pr-14 pb-10 md:pb-16 pt-8 border-dashed border-2 border-opacity-50 rounded-lg border-palette-yellow">
       <a
         href="https://www.voicemix.io/"
         target="_blank"
@@ -118,8 +121,12 @@ export default function VmxExperience({ language }) {
           />
         </svg>
       </a>
-      <p className="text-sm font-light text-justify md:tracking-wide">{texts[language][0]}</p>
-      <div className="flex flex-col pt-2 md:flex-row items-center md:space-x-2 space-y-5 md:space-y-0 md:h-80 ">
+      {texts[language].map((e) => (
+        <p key={e} className="text-sm font-light text-justify md:tracking-wide pt-1.5">
+          {e}
+        </p>
+      ))}
+      <div className="flex flex-col pt-4 md:flex-row items-center md:space-x-2 space-y-5 md:space-y-0 md:h-80 ">
         <div className="flex flex-row-reverse md:flex-col text-palette-yellow text-opacity-50 items-center w-full md:w-min h-full">
           <p2 className="rounded-full bg-palette-black border-2 border-palette-yellow border-opacity-50 px-2.5 py-1">
             2022
@@ -147,7 +154,7 @@ export default function VmxExperience({ language }) {
         >
           {[0, 1, 2].map((e) => {
             return (
-              <li key={e.toString} className="flex-grow" role="presentation">
+              <li key={buttons[language][e]} className="flex-grow" role="presentation">
                 <button
                   className={selected === e ? "btn-yellow-selected" : "btn-yellow-deselected"}
                   onClick={() => {
@@ -163,12 +170,14 @@ export default function VmxExperience({ language }) {
         <div id="experienceText" className="md:w-5/6 leading-snug md:px-2 space-y-1.5">
           <p className="font-light text-xs pt-5 pb-1">{expTexts[language][selected][0]}</p>
           {expTexts[language][selected].map((e) => {
-            return expTexts[language][selected].indexOf(e) == 0 ? <></> : <p className="text-justify">{e}</p>;
+            if (expTexts[language][selected].indexOf(e) != 0) {
+              return <p key={e} className="text-justify">{e}</p>;
+            }
           })}
           <ul className="grid leading-snug pt-6 text-xs md:text-sm font-semibold md:font-bold md:tracking-wider gap-2 grid-cols-3">
             {frameworks[selected].map((e) => {
               return (
-                <li key={frameworks.indexOf(e).toString()} className="flex flex-row items-center space-x-2">
+                <li key={e} className="flex flex-row items-center space-x-2">
                   <svg width="7" height="9" viewBox="0 0 20 23">
                     <path d="M19.375 11.5L0.624999 22.3253L0.625 0.674682L19.375 11.5Z" opacity="70%" fill="#FFEC40" />
                   </svg>

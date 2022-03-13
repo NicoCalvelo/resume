@@ -51,7 +51,7 @@ export default function Home() {
   }, []);
 
   return (
-    <body id='mainDiv' className="transition transition-all duration-1000">
+    <div id='mainDiv' className="transition transition-all duration-1000">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="See Nicolas Calvelo resume online Now!" />
@@ -80,6 +80,6 @@ export default function Home() {
         <SocailSideBar color={color} />
       </div>
       <ProjectModal language={language} />
-    </body>
+    </div>
   );
 }

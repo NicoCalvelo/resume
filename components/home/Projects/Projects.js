@@ -13,18 +13,18 @@ const projectsSlots = [
     {
         title:'Crypto Towers',
         description: {
-            English: 'A game where you have towers on a map full of other players who also have towers and you can occasionally face them. All the towers on the map are NFT, which means they’re really yours.',
-            Spanish: 'Un juego donde posees torres en un mapa lleno de otros jugadores que también tienen torres y puedes enfrentarlas ocasionalmente. Todas las torres en el mapa son NFT, lo cual significa que realmente son tuyas.',
-            French: 'Un jeu où vous avez des tours sur une carte pleine d’autres joueurs qui ont aussi des tours et vous pouvez parfois y faire face. Toutes les tours sur la carte sont NFT, ce qui signifie qu’elles sont vraiment à vous.',
+            English: "A towers game based on NFTs on a map filled with other players. I have started this project mainly to get into blockchain development.",
+            Spanish: 'Un juego de torres basado en NFTs en un mapa lleno de otros jugadores. He comenzado este proyecto principalmente para adentrarme en desarrollo de blockchain.',
+            French: 'Un jeu de tours basé sur des NFTs sur un monde rempli d’autres joueurs. J’ai commencé ce projet principalement pour entrer dans le développement blockchain.',
         },
         img: '/images/cryptoTowers.jpg',
     },
     {
         title:'Trading Bot',
         description: {
-            English: 'The uncertainty of cryptocurrencies',
-            Spanish: 'La incertidumbre de las criptomonedas',
-            French: 'L’incertitude des cryptomonnaies',
+            English: 'Machine learning and the uncertainty of cryptocurrencies',
+            Spanish: 'Machine learning y la incertidumbre de las criptomonedas',
+            French: 'Machine learning et l’incertitude des cryptomonnaies',
         },
         img: '/images/botPortrait.jpg',
         timePeriod: {
@@ -36,9 +36,9 @@ const projectsSlots = [
     {
         title:'Endeavor Miami',
         description: {
-            English: 'Find your start-up ideal investors',
-            Spanish: 'Inversores ideales para tu start-up',
-            French: 'Des onduleurs idéaux pour votre start-up',
+            English: 'Find the ideal investment funds for your start-up',
+            Spanish: 'Encuentra los fondos de inversión ideales para tu start-up',
+            French: 'Trouvez les fonds d’investissement idéaux pour votre start-up',
         },
         img: '/images/endeavorPortrait.jpg',
         timePeriod: {
@@ -50,9 +50,9 @@ const projectsSlots = [
     {
         title:'Te Busco',
         description: {
-            English: 'A mobile game based in my hometown',
-            Spanish: 'Un juego basado en mi ciudad natal',
-            French: 'Un jeu basé sur ma ville natale',
+            English: 'A 2D platformer game based in my hometown',
+            Spanish: 'Un juego de plataformas 2D basado en mi ciudad natal',
+            French: 'Un jeu de plateforme 2D basé dans ma ville natale',
         },
         img: '/images/teBuscoPortrait.jpg',
         timePeriod: {

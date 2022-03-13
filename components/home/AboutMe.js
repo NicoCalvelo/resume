@@ -26,7 +26,6 @@ const texts = {
   ],
 };
 
-
 // const texts = {
 //   English: [
 //     "About me",
@@ -94,7 +93,12 @@ export default function AboutMe({ language }) {
           </div>
           <div className="flex leading-snug w-full md:w-3/5 flex-col space-y-2 md:space-y-4 md:px-10 ">
             {texts[language].map((e) => {
-              return texts[language].indexOf(e) == 0 ? <></> : <p className="text-justify">{e}</p>;
+              if (texts[language].indexOf(e) != 0)
+                return (
+                  <p key={e} className="text-justify">
+                    {e}
+                  </p>
+                );
             })}
           </div>
         </div>

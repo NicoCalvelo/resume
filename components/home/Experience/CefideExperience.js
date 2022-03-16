@@ -1,15 +1,15 @@
 const texts = {
   English: [
     "App development",
-    "CEFiDe is a gym in the city where I was born and lived my childhood. Its owner, a friend of my father’s, learned that I was taking an application development course and hired me to do what would be my first application project. With a little uncertainty and doubting my abilities, I set to work, without even imagining how much I would dive into this world after a few months.",
+    "CEFiDe is a gym located in San Nicolás - Argentina. They work mainly in the recovery of injuries and the preparation of athletes, among others.  After talking to the manager several times and knowing my interest in the field of computer science, he proposed me the creation of his own application. As in any first job, with a little uncertainty I accepted. So I devoted myself to work without even imagining the adventures and learning that I was about to experience.",
   ],
   Spanish: [
     "Desarrollo de app",
-    "CEFiDe es un gimnasio de la ciudad donde nací y viví mi ñiñez. Su dueño, amigo de mi padre, al enterarse que estaba realizando un curso de desarrollo de app me contrato para realizar lo que seria mi primer proyecto de app. Con un poco de incertidumbre y dudando de mis capacidades me puse manos a la obra, sin siquiera imaginar cuanto me adentraria en este mundo al cabo de unos meses.",
+    "El CEFiDe es un gimnasio situado en San Nicolás - Argentina. Trabajan principalmente en la recuperación de lesiones y la preparación de deportistas, entre otros.  Después de hablar con el gerente varias veces y conociendo mi interés en el campo de la informática, me propuso la creación de su propia aplicación. Como en cualquier primer trabajo, con un poco de incertidumbre acepté. Así que me dediqué al trabajo sin ni siquiera imaginar las aventuras y el aprendizaje que estaba a punto de experimentar.",
   ],
   French: [
     "App Développement",
-    "CEFiDe est un gymnase de la ville où je suis né et où j’ai vécu mon enfance. Son propriétaire, ami de mon père, a appris qu’il prenait un cours de développement d’applications et m’a engagé pour faire ce qui serait mon premier projet d’app. Avec un peu d’incertitude et doutant de mes capacités, je me mis au travail, sans même imaginer combien je m’aventurerais dans ce monde après quelques mois.",
+    "Le CEFiDe est une salle de sport, situe en San Nicolas – Argentine. Ils travaillent principalement sur la récupération des blessures et la préparation des sportifs, entre autres.  Après avoir échangé avec le responsable a plusieurs reprises et connaissant mon intérêt par le domaine informatique, il m’a proposé la création de leur propre application. Comme dans tout premier travail, avec un peu d’incertitude j’ai accepté. Je me suis donc consacrée au travail sans même imaginer les aventures et apprentissages que j’étais sur le point de vivre.",
   ],
 };
 const frameworks = ["Flutter", "UX", "GIMP", "Git/Github", "AWS (cloud)", "Windows", "Android"];
@@ -17,18 +17,18 @@ const frameworks = ["Flutter", "UX", "GIMP", "Git/Github", "AWS (cloud)", "Windo
 const expTexts = {
   English: [
     "Febraury 2019 - December 2020",
-    `My weekly job was to make as much progress as possible in the gym and customer requirements. This led me to make a news feed about the gym, a system of shifts, loading and viewing of gym routines, and also an administration program for PC where to manage the entire database.`,
-    `I have certainly learned a lot about application development, however what served me most was to start rubbing shoulders with customers and the daily demand of the real world, learning to prioritize, segment and other skills that escape a programmer’s technicality.`,
+    `The first phase of my work was to understand the dynamics and needs of the customers in the room. This led me to create a news section, a calendar of activities and a system to visualize the different training routines.`,
+    `I have certainly learned a lot about application development, but the most important thing was to get into the professional world. Hobnobbing with customers, managing daily demands, learning to prioritize, segment, and other skills beyond a programmer’s technicality.`,
   ],
   Spanish: [
     "Febrero 2019 - Diciembre 2019",
-    `Mi trabajo semanal era hacer el mayor progreso posible en el gimnasio y los requisitos del cliente. Esto me llevó a hacer un feed de noticias sobre el gimnasio, un sistema de turnos, carga y visualización de rutinas de gimnasio, y también un programa de administración para PC donde gestionar toda la base de datos.`,
-    `Sin duda he aprendido mucho sobre el desarrollo de aplicaciones, sin embargo, lo que más me sirvió fue empezar a codearme con los clientes y la demanda diaria del mundo real, aprender a priorizar, segmentar y otras habilidades que escapan al tecnicismo de un programador.`,
+    `La primera fase de mi trabajo consistía en comprender la dinámica y las necesidades de los clientes de la sala. Esto me llevó a crear una sección de noticias, un calendario de actividades y un sistema para visualizar las diferentes rutinas de entrenamiento.`,
+    `Sin duda he aprendido mucho sobre el desarrollo de aplicaciones, pero lo más importante fue entrar en el mundo profesional. Codearse con los clientes, gestionar las demandas diarias, aprender a priorizar, segmentar y otras habilidades que escapan al tecnicismo de un programador.`,
   ],
   French: [
     "Février 2019 - Décembre 2019",
-    `Mon travail hebdomadaire était de faire le plus de progrès possible dans le gymnase et les exigences des clients. Cela m’a amené à faire un flux de nouvelles sur le gymnase, un système de quarts de travail, le chargement et la visualisation des routines de gymnase, et aussi un programme d’administration pour PC où gérer la base de données entière.`,
-    `J’ai certainement beaucoup appris sur le développement d’applications, mais ce qui m’a le plus servi était de commencer à côtoyer les clients et la demande quotidienne du monde réel, apprendre à prioriser, segmenter et d’autres compétences qui échappent à la technicité d’un programmeur.`,
+    `La première phase de mon travail consistait en comprendre la dynamique et les besoins des clients de la salle. Cela m’a amené à créer un fil d’actualité, un planning des activités et un système pour visualiser les différentes routines d’entrainement.`,
+    `J’ai certainement beaucoup appris sur le développement des applications, mais le plus important a été de rentrer dans le monde professionnel. Côtoyer les clients, gérer les demandes quotidiennes, apprendre à prioriser, segmenter et d’autres compétences qui échappent à la technicité d’un programmeur.`,
   ],
 };
 

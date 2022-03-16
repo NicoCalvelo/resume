@@ -1,15 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
+import styles from "./navBar.module.scss";
 import { useEffect, useState } from "react";
 
 const texts = {
-  English: ["About me", "Experience", "Contact"],
-  Spanish: ["Sobre mi", "Experiencia", "Contacto"],
-  French: ["Sur moi", "Expérience", "Contact"],
+  English: ["About me", "Experience", "Projects", "Contact"],
+  Spanish: ["Sobre mi", "Experiencia", "Proyectos", "Contacto"],
+  French: ["Sur moi", "Expérience", "Projets", "Contact"],
 };
 
 export default function NavBar({ language, color }) {
- 
   const [scrolling, setScrolling] = useState(true);
   const [scrollTop, setScrollTop] = useState(0);
 
@@ -35,16 +35,20 @@ export default function NavBar({ language, color }) {
   }, [scrollTop]);
 
   function toAbout() {
-    let element = document.getElementById('orange');
-    element.scrollIntoView({behavior: "smooth"});
+    let element = document.getElementById("orange");
+    element.scrollIntoView({ behavior: "smooth" });
   }
   function toExperience() {
-    let element = document.getElementById('yellow');
-    element.scrollIntoView({behavior: "smooth"});
+    let element = document.getElementById("yellow");
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+  function toProjects() {
+    let element = document.getElementById("purple");
+    element.scrollIntoView({ behavior: "smooth" });
   }
   function toContact() {
-    let element = document.getElementById('grey');
-    element.scrollIntoView({behavior: "smooth"});
+    let element = document.getElementById("grey");
+    element.scrollIntoView({ behavior: "smooth" });
   }
 
   return (
@@ -75,6 +79,17 @@ export default function NavBar({ language, color }) {
             />
           </svg>
         </Link>
+        <div className="flex w-2/5 justify-end md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </div>
         <div className="hidden md:flex flex-row text-xs justify-evenly items-center space-x-4">
           <textbtn onClick={toAbout}>{texts[language][0]}</textbtn>
           <div
@@ -86,7 +101,9 @@ export default function NavBar({ language, color }) {
                 ? "bg-palette-orange"
                 : color == "#FFEC40"
                 ? "bg-palette-yellow"
-                : color=='#EB2FA0' ?'bg-palette-purple' :"bg-palette-grey")
+                : color == "#EB2FA0"
+                ? "bg-palette-purple"
+                : "bg-palette-grey")
             }
           />
           <textbtn onClick={toExperience}>{texts[language][1]}</textbtn>
@@ -99,10 +116,27 @@ export default function NavBar({ language, color }) {
                 ? "bg-palette-orange"
                 : color == "#FFEC40"
                 ? "bg-palette-yellow"
-                : color=='#EB2FA0' ?'bg-palette-purple' :"bg-palette-grey")
+                : color == "#EB2FA0"
+                ? "bg-palette-purple"
+                : "bg-palette-grey")
             }
           />
-          <textbtn onClick={toContact}>{texts[language][2]}</textbtn>
+          <textbtn onClick={toProjects}>{texts[language][2]}</textbtn>
+          <div
+            className={
+              "w-1 h-1 transition-all duration-500 rounded-full " +
+              (color == "#2FEB98"
+                ? "bg-palette-green"
+                : color == "#EB784B"
+                ? "bg-palette-orange"
+                : color == "#FFEC40"
+                ? "bg-palette-yellow"
+                : color == "#EB2FA0"
+                ? "bg-palette-purple"
+                : "bg-palette-grey")
+            }
+          />
+          <textbtn onClick={toContact}>{texts[language][3]}</textbtn>
         </div>
       </nav>
     </>

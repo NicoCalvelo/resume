@@ -110,7 +110,7 @@ export default function Projects({ language }) {
               className="rounded"
               src={projectsSlots[0].img}
               width={1900}
-              height={969.43}
+              height={849.4}
               alt="header_img"
             />
           </div>

@@ -4,17 +4,17 @@ import styles from "./experience.module.scss";
 const texts = {
   English: [
     "The VoiceMix Start-up was born as a tool to amplify and share the messages of value in our society, in order to inform and sensitize users on different topics. It thus makes it possible to connect people with common values, such as human rights, ecology and women’s rights, among others.",
-    "In 2020 I joined the company as a programmer and co-founder of the team. We reached a staff of 14 in 2021, allowing us to cope with a multitude of tasks. From product design and assembly, through Latin American marketing campaigns, to rounds of funding at Draper University in California.",
+    "In 2020 I joined the company as a full-stack developper. We reached a staff of 14 in 2021, allowing us to cope with a multitude of tasks. From product design and assembly, through Latin American marketing campaigns, to rounds of funding at Draper University in California.",
     "The Company is gradually evolving, and in the news it is focused on Blockchain and NFT’s projects.",
   ],
   Spanish: [
     "La Startup VoiceMix nace como una herramienta para amplificar y compartir mensajes de valor en nuestra sociedad, con el fin de informar y concienciar a los usuarios sobre diferentes temas. Así, permite relacionar a las personas con valores comunes, como los derechos humanos, la ecología y los derechos de la mujer, entre otros.",
-    "En 2020 me uní a la empresa como programador y cofundador del equipo. Alcanzamos una plantilla de 14 personas en 2021, lo que nos permitió hacer frente a una multitud de tareas. Desde el diseño y montaje del producto, pasando por campañas de marketing a nivel latinoamericano, hasta las rondas de financiación en la Universidad Draper de California.",
+    "En 2020 me uní a la empresa como programador full-stack. Alcanzamos una plantilla de 14 personas en 2021, lo que nos permitió hacer frente a una multitud de tareas. Desde el diseño y montaje del producto, pasando por campañas de marketing a nivel latinoamericano, hasta las rondas de financiación en la Universidad Draper de California.",
     "La start-up evoluciona progresivamente, y en la actualidad se centra en proyectos en Blockchain y NFT’s.",
   ],
   French: [
     "La Start-up VoiceMix est née comme un outil permettant d'amplifier et partager les messages de valeur dans notre société, afin d' informer et conscientiser les utilisateurs sur différents sujets. Elle permet ainsi de mettre en relation des personnes avec des valeur communs, tels que les droits humains, l'écologie et les droits de la femme, entre autres.",
-    "En 2020 j’ai rejoint l’entreprise en tant que programmateur et cofondateur de l'équipe de travail. Nous avons atteint un effectif de 14 personnes en 2021, nous permettant de faire face à une multitude de tâches. De la conception et de l’assemblage du produit, en pasant par des campagnes de marketing sur le plan Latino-Américain, jusqu’aux rondes de financement à l’Université Draper en Californie.",
+    "En 2020 j’ai rejoint l’entreprise en tant que programmateur full-stack. Nous avons atteint un effectif de 14 personnes en 2021, nous permettant de faire face à une multitude de tâches. De la conception et de l’assemblage du produit, en pasant par des campagnes de marketing sur le plan Latino-Américain, jusqu’aux rondes de financement à l’Université Draper en Californie.",
     "La Société évolue progressivement, et dans l'actualité elle est centrée sur des projets en Blockchain et NFT’s.",
   ],
 };

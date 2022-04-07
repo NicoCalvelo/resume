@@ -3,17 +3,17 @@ import styles from "./experience.module.scss";
 
 const texts = {
   English: [
-    "The VoiceMix Start-up was born as a tool to amplify and share the messages of value in our society, in order to inform and sensitize users on different topics. It thus makes it possible to connect people with common values, such as human rights, ecology and women’s rights, among others.",
+    "The VoiceMix Start-up was born as a tool to amplify and share the messages of value in our society, in order to inform and sensitize users on different topics.",
     "In 2020 I joined the company as a full-stack developper. We reached a staff of 14 in 2021, allowing us to cope with a multitude of tasks. From product design and assembly, through Latin American marketing campaigns, to rounds of funding at Draper University in California.",
     "The Company is gradually evolving, and in the news it is focused on Blockchain and NFT’s projects.",
   ],
   Spanish: [
-    "La Startup VoiceMix nace como una herramienta para amplificar y compartir mensajes de valor en nuestra sociedad, con el fin de informar y concienciar a los usuarios sobre diferentes temas. Así, permite relacionar a las personas con valores comunes, como los derechos humanos, la ecología y los derechos de la mujer, entre otros.",
+    "La Startup VoiceMix nace como una herramienta para amplificar y compartir mensajes de valor en nuestra sociedad, con el fin de informar y concienciar a los usuarios sobre diferentes temas.",
     "En 2020 me uní a la empresa como programador full-stack. Alcanzamos una plantilla de 14 personas en 2021, lo que nos permitió hacer frente a una multitud de tareas. Desde el diseño y montaje del producto, pasando por campañas de marketing a nivel latinoamericano, hasta las rondas de financiación en la Universidad Draper de California.",
     "La start-up evoluciona progresivamente, y en la actualidad se centra en proyectos en Blockchain y NFT’s.",
   ],
   French: [
-    "La Start-up VoiceMix est née comme un outil permettant d'amplifier et partager les messages de valeur dans notre société, afin d' informer et conscientiser les utilisateurs sur différents sujets. Elle permet ainsi de mettre en relation des personnes avec des valeur communs, tels que les droits humains, l'écologie et les droits de la femme, entre autres.",
+    "La Start-up VoiceMix est née comme un outil permettant d'amplifier et partager les messages de valeur dans notre société, afin d' informer et conscientiser les utilisateurs sur différents sujets.",
     "En 2020 j’ai rejoint l’entreprise en tant que programmateur full-stack. Nous avons atteint un effectif de 14 personnes en 2021, nous permettant de faire face à une multitude de tâches. De la conception et de l’assemblage du produit, en pasant par des campagnes de marketing sur le plan Latino-Américain, jusqu’aux rondes de financement à l’Université Draper en Californie.",
     "La Société évolue progressivement, et dans l'actualité elle est centrée sur des projets en Blockchain et NFT’s.",
   ],
@@ -34,7 +34,7 @@ const expTexts = {
   English: [
     [
       "August 2021 - December 2021",
-      `In March 2021 I started my work as a product manager, it was an intense experience as it is the case in a start-up.`,
+      `Working as a product manager has been an intense and rewarding experience.`,
       `My daily job was to coordinate a team of four people, to carry out the product development on the UX/UI, back and front end aspects. All in direct contact with the marketing team and management.`,
       `We have implemented agile and responsive working methods, allowing us to regularly test the progress of our activity with different user groups. To create a real impact, we had to correlate technical possibilities with user expectations.`,
     ],
@@ -52,7 +52,7 @@ const expTexts = {
   Spanish: [
     [
       "Agosto 2021 - Diciembre 2021",
-      `En marzo de 2021 comencé mi trabajo como gerente de producto, fue una experiencia intensa como es el caso en una start-up.`,
+      `Trabajar como gerente de producto ha sido una experiencia intensa y gratificante.`,
       `Mi trabajo diario consistía en coordinar un equipo de cuatro personas para llevar a cabo el desarrollo del producto en los aspectos UX/UI, back y front end. Todo ello en relación directa con el equipo de marketing y la dirección.`,
       `Hemos implementado métodos de trabajo ágiles y responsivos, lo que nos permite comprobar periódicamente los avances de nuestro negocio con diferentes grupos de usuarios. Para crear un impacto real, tuvimos que correlacionar las posibilidades técnicas con las expectativas de los usuarios.`,
     ],
@@ -70,7 +70,7 @@ const expTexts = {
   French: [
     [
       "Août 2021 - Décembre 2021",
-      `En mars 2021 j’ai commencé mon travail comme responsable de produit, cela a été une expérience intense comme c'est le cas dans une Start-up.`,
+      `Travailler comme chef de produit a été une expérience intense et enrichissante.`,
       `Mon travail quotidien consistait à coordonner un équipe de quatre personnes, pour mener à bien le développement du produit sur les aspects UX/UI, back et front end. Le tout, en relation directe avec l’équipe marketing et la direction.`,
       `Nous avons mis en place des méthodes de travail agiles et responsives, permettant de tester régulièrement les avancements de notre activité avec différents groupes d’utilisateurs. Pour créer un réel impact, nous devions corréler les possibilités techniques avec l’attente des utilisateurs.`,
     ],

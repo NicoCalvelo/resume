@@ -12,7 +12,7 @@ const texts = {
     "Le CEFiDe est une salle de sport, situe en San Nicolas – Argentine. Ils travaillent principalement sur la récupération des blessures et la préparation des sportifs, entre autres.  Après avoir échangé avec le responsable a plusieurs reprises et connaissant mon intérêt par le domaine informatique, il m’a proposé la création de leur propre application. Comme dans tout premier travail, avec un peu d’incertitude j’ai accepté. Je me suis donc consacrée au travail sans même imaginer les aventures et apprentissages que j’étais sur le point de vivre.",
   ],
 };
-const frameworks = ["Flutter", "UX", "GIMP", "Git/Github", "AWS (cloud)", "Windows", "Android"];
+const frameworks = ["Flutter", "UX", "Photoshop", "Git/Github", "AWS (cloud)", "Windows", "Android"];
 
 const expTexts = {
   English: [

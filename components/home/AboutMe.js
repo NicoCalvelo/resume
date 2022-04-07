@@ -8,21 +8,21 @@ const texts = {
     `Strongly attracted by the technological industry, innovation and start-ups, I know how to appreciate complex challenges, with various stakes. Originally from Argentina, I greatly appreciate nature, sport and outdoor activities. Being calm and simple in everyday life, I keep a critical mind about my work and my goals.`,
     `At the age of 16, I started working on my programming skills as a self-taught. This allowed me to create my first games and applications. This contact with technology has woven my curiosity, pushing me towards a deeper understanding of this universe.`,
     `In 2020 I went to live in Patagonia, where I completed my two years of studies in administration and my first professional experiences. I have lived two years with a lot of emotions and work, accentuated by a unique global environment due to Covid-19. Undoubtedly a great experience, which gave me the necessary tools to tackle new challenges in my life.`,
-    `With the firm intention of continuing my learning in web development, and wishing to enrich my professional career. I am currently looking for a learning project, allowing me to use my skills.`,
+    `With the firm purpose of continuing my learning development, and wishing to enrich my professional career. I am currently looking for a company that knows how to accompany me in my learning project.`,
   ],
   Spanish: [
     "Sobre mi",
     `Apasionado por la industria tecnológica, la innovación y las start-ups, sé apreciar los desafíos complejos en su totalidad. Originario de Argentina, atraido por la naturaleza, el deporte, la inovacion en tecnologia y las actividades al aire libre. Me considero tranquilo y sencillo en la vida cotidiana, asi manteniendo una mente crítica sobre mi trabajo y mis objetivos.`,
     `A los 16 años comencé a aprender a programar de forma autodidacta. Esto me permitió crear mis primeros juegos y aplicaciones. Este contacto temprano con la tecnología alimentó mi curiosidad, llevándome a una comprensión más profunda de lo que el inovar implicaba.`,
     `En 2020 me fui a vivir a la Patagonia, donde realicé mis dos años de estudios en administración y mis primeras experiencias profesionales. He vivido dos años muy ricos en emociones y trabajo, acentuados por un contexto mundial único debido al Covid-19. Sin duda una gran experiencia, que me dio las herramientas necesarias para abordar nuevos desafíos en mi vida.`,
-    `Con la firme intención de continuar mi aprendizaje en desarrollo web, y deseando enriquecer mi trayectoria profesional. Actualmente estoy buscando un proyecto de aprendizaje que me permita aprovechar mis habilidades.`,
+    `Con el firme propósito de continuar con mi desarrollo formativo, y deseando enriquecer mi carrera profesional. Actualmente estoy buscando una empresa que sepa acompañarme en mi proyecto de aprendizaje.`,
   ],
   French: [
     "Sur moi",
     `Fortement attiré par l’industrie technologique, l'innovation et les start-up, je sais apprécier les défis complexes, avec des enjeux divers. Originaire d'Argentine, j'apprécie grandement la nature, le sport et les activités en plein air. Étant calme et simple dans la vie quotidienne, je garde un esprit critique sur mon travail et mes objectifs.`,
     `A l'âge de 16 ans, j’ai commencé à travailler sur mes compétences en programmation en tant qu’autodidacte. Ce qui m’a permis de créer mes premiers jeux et applications. Ce contact avec la technologie a tissé ma curiosité, en me poussant vers une compréhension plus approfondie de cet univers.`,
     `En 2020 je suis partie vivre en Patagonie, ou j’ai réalisé mes deux ans d'études en administration et mes premières expériences professionnelles. J’ai vécu deux ans très riches en émotions et travail, accentuées par un contexte mondial unique en raison du Covid-19. Sans doute une grande expérience, qui m'a donné les outils nécessaires pour aborder de nouveaux défis dans ma vie.`,
-    `Avec la ferme intention de continuer mon apprentissage en développement web, et souhaitant enrichir mon parcours professionnel. Je suis actuellement à la recherche d’un projet en apprentissage, me permettant de mettre à profit mes compétences.`,
+    `Avec la ferme intention de poursuivre le développement de mon apprentissage, et souhaitant enrichir mon parcours professionnel. Je recherche actuellement une entreprise qui sache m'accompagner dans mon projet d'apprentissage.`,
   ],
 };
 

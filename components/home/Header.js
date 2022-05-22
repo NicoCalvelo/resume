@@ -6,19 +6,19 @@ const texts = {
     "Hi, my name is",
     "Young tech-entrepeneur.",
     "Passionate about tech-innovation and start-ups. In search of new experiences in Europe, continue academic studies and my professional career.",
-    "Download my resume",
+    "Download resume",
   ],
   Spanish: [
     "Hola, me llamo",
     "Joven emprendedor en tecnología",
     "Apasionado por la innovación tecnológica y las start-ups. En busca de nuevas experiencias en Europa, asi también continuar mis estudios y mi trayectoria profesional.",
-    "Descargar mi CV",
+    "Descargar CV",
   ],
   French: [
     "Salut, mon nom est",
     "Jeune entrepreneur en technologie.",
     "Passionné par l’innovation en technologie, et à la recherche de nouvelles expériences en Europe. Je m'apprête à continuer ma formation universitaire, ainsi que mon parcours professionnel.",
-    "Téléchargez mon CV",
+    "Téléchargez CV",
   ],
 };
 

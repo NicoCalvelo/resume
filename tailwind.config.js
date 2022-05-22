@@ -18,6 +18,17 @@ module.exports = {
       },
       spacing: {
         '0.25': '1px',
+      },
+      backgroundImage: {
+        'nature': "url('/images/interests/nature.jpg')",
+        'tech': "url('/images/interests/tech.jpg')",
+        'startup': "url('/images/interests/startup.jpg')",
+        'french': "url('/images/interests/french.jpg')",
+        'english': "url('/images/interests/english.jpg')",
+        'spanish': "url('/images/interests/spanish.jpg')",
+        'tennis': "url('/images/interests/tennis.jpg')",
+        'cycling': "url('/images/interests/cycling.jpg')",
+        'basquet': "url('/images/interests/basquet.jpg')",
       }
     },
   },

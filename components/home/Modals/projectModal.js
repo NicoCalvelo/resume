@@ -7,7 +7,7 @@ export function openProjectModal(displayProject) {
   refresh(toDisplay);
   document.getElementById(displayProject).classList.remove(["hidden"]);
   document.getElementById("projectModal").classList.remove(["hidden"]);
-  document.getElementById("mainDiv").classList.add(["overflow-y-hidden"]);
+  document.getElementById("main").classList.add(["overflow-y-hidden"]);
 }
 
 var toDisplay = "";
@@ -31,7 +31,7 @@ export default function ProjectModal({ language }) {
     if (e == "closeButton" || e.target.id == "projectModal" || e.key === "Escape") {
       document.getElementById(toDisplay).classList.add(["hidden"]);
       document.getElementById("projectModal").classList.add(["hidden"]);
-      document.getElementById("mainDiv").classList.remove(["overflow-y-hidden"]);
+      document.getElementById("main").classList.remove(["overflow-y-hidden"]);
     }
   }, []);
 

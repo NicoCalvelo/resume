@@ -96,7 +96,7 @@ export default function NavBar({ language, color }) {
         </div>
         <div className="flex flex-row justify-between">
           <Link href="/" passHref>
-            <svg width="23.06" height="30" viewBox="0 0 56 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="cursor-pointer" width="23.06" height="30" viewBox="0 0 56 72" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 className="transition-all duration-500"
                 d="M52.8184 69.785H35.0374L21.4353 53.9519V0.143459L52.8184 69.785Z"

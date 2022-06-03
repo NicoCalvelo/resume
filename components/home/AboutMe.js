@@ -14,7 +14,7 @@ const texts = {
     "Sobre mi",
     `Nací en Argentina en 2002. Me apasionan la naturaleza, el deporte, las start-ups y la industria tecnológica. Me considero una persona sencilla y tranquila, dedicada y ambiciosa. Espero poder transmitir mi aprendizaje y mis valores a lo largo de esta página.`,
     `A la edad de 16 años, empecé a programar y crear mis propios videojuegos y aplicaciones. Impulsado por mi curiosidad, quería entender lo que estaba sucediendo detrás de estas pantallas. Sin planearlo, años más tarde me encontraría totalmente inmerso en ese mundo.`,
-    `Al final de mis 17 años, fui a vivir solo al sur de mi país. La conocida Patagonia argentina.  Allí comencé mis dos años de estudios en administración y mis participaciones en el mundo del trabajo. Diferentes experiencias, aprendizajes, decepciones y alegrías, con emociones intensificadas en un contexto de pandemia. Sin duda un gran crecimiento tanto personal como profesional que me dio lo necesario para hacer frente a las siguientes etapas en mi vida.`,
+    `Al final de mis 17 años, fui a vivir solo al sur de mi país. La conocida Patagonia argentina.  Allí comencé mis dos años de estudios en administración y mis participaciones en emprendimientos. Diferentes experiencias, aprendizajes, decepciones y alegrías, con emociones intensificadas en un contexto de pandemia. Sin duda un gran crecimiento tanto personal como profesional que me dio lo necesario para hacer frente a las siguientes etapas en mi vida.`,
     `Actualmente vivo en Aveyron, Francia. Con la intención de aprender el idioma, la cultura e integrarme en la dinamica local. Con la mente puesta en continuar mis estudios y seguir enriqueciendo mi carrera profesional con nuevas y desafiantes experiencias.`,
   ],
     French: [

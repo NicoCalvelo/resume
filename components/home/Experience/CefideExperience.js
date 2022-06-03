@@ -1,15 +1,15 @@
 const texts = {
   English: [
     "App development",
-    "CEFiDe is a gym located in San Nicolás - Argentina. They work mainly in the recovery of injuries and the preparation of athletes, among others.  After talking to the manager several times and knowing my interest in the field of computer science, he proposed me the creation of his own application. As in any first job, with a little uncertainty I accepted. So I devoted myself to work without even imagining the adventures and learning that I was about to experience.",
+    "CEFiDe is a gym located in San Nicolás - Argentina. They work mainly in the recovery of injuries and the preparation of athletes, among others.",
   ],
   Spanish: [
     "Desarrollo de app",
-    "El CEFiDe es un gimnasio situado en San Nicolás - Argentina. Trabajan principalmente en la recuperación de lesiones y la preparación de deportistas, entre otros.  Después de hablar con el gerente varias veces y conociendo mi interés en el campo de la informática, me propuso la creación de su propia aplicación. Como en cualquier primer trabajo, con un poco de incertidumbre acepté. Así que me dediqué al trabajo sin ni siquiera imaginar las aventuras y el aprendizaje que estaba a punto de experimentar.",
+    "El CEFiDe es un gimnasio situado en San Nicolás - Argentina. Trabajan principalmente en la recuperación de lesiones y la preparación de deportistas, entre otros.",
   ],
   French: [
     "App Développement",
-    "Le CEFiDe est une salle de sport, situe en San Nicolas – Argentine. Ils travaillent principalement sur la récupération des blessures et la préparation des sportifs, entre autres.  Après avoir échangé avec le responsable a plusieurs reprises et connaissant mon intérêt par le domaine informatique, il m’a proposé la création de leur propre application. Comme dans tout premier travail, avec un peu d’incertitude j’ai accepté. Je me suis donc consacrée au travail sans même imaginer les aventures et apprentissages que j’étais sur le point de vivre.",
+    "Le CEFiDe est une salle de sport, situe en San Nicolas – Argentine. Ils travaillent principalement sur la récupération des blessures et la préparation des sportifs, entre autres.",
   ],
 };
 const frameworks = ["Flutter", "UX", "Photoshop", "Git/Github", "AWS (cloud)", "Windows", "Android"];
@@ -17,13 +17,13 @@ const frameworks = ["Flutter", "UX", "Photoshop", "Git/Github", "AWS (cloud)", "
 const expTexts = {
   English: [
     "Febraury 2019 - December 2020",
-    `The first phase of my work was to understand the dynamics and needs of the customers in the room. This led me to create a news section, a calendar of activities and a system to visualize the different training routines.`,
-    `I have certainly learned a lot about application development, but the most important thing was to get into the professional world. Hobnobbing with customers, managing daily demands, learning to prioritize, segment, and other skills beyond a programmer’s technicality.`,
+    `Part of my job was to understand and iterate on user needs. This led me to create a news section, a calendar of activities and a system to load and view the different training sheets.`,
+    `I have learned a lot about application development, however the most important thing was those first contacts with the professional world.`,
   ],
   Spanish: [
     "Febrero 2019 - Diciembre 2019",
-    `La primera fase de mi trabajo consistía en comprender la dinámica y las necesidades de los clientes de la sala. Esto me llevó a crear una sección de noticias, un calendario de actividades y un sistema para visualizar las diferentes rutinas de entrenamiento.`,
-    `Sin duda he aprendido mucho sobre el desarrollo de aplicaciones, pero lo más importante fue entrar en el mundo profesional. Codearse con los clientes, gestionar las demandas diarias, aprender a priorizar, segmentar y otras habilidades que escapan al tecnicismo de un programador.`,
+    `Parte de mi trabajo consistía en comprender e iterar sobre las necesidades de los usuarios. Esto me llevó a crear una sección de noticias, un calendario de actividades y un sistema cargar y visualizar las diferentes planillas de entrenamiento.`,
+    `He aprendido mucho sobre el desarrollo de aplicaciones, sin embargo lo más importante fueron esos primeros contactos con el mundo profesional.`,
   ],
   French: [
     "Février 2019 - Décembre 2019",
@@ -35,11 +35,21 @@ const expTexts = {
 export default function CefideExperience({ language }) {
   return (
     <div className="relative shadow-xl flex flex-col pl-5 md:pl-8 pr-10 md:pr-14 pb-10 md:pb-16 pt-10 border-dashed border-2 border-opacity-50 rounded-lg border-palette-yellow">
-      <p className="absolute py-0.5 -top-4 bg-palette-yellow rounded-full px-4 text-palette-black left-4 font-bold text-xl tracking-wider">
-        CEFiDe
-      </p>
-      <p className="text-sm font-light text-justify md:tracking-wide">{texts[language][1]}
-      </p>
+      <div className="absolute flex left-4 -top-4 items-center  bg-palette-yellow py-0.5   rounded-full px-4   ">
+        <p className="text-xl tracking-wider font-bold text-palette-black">CEFiDe</p>
+        <div className="group flex flex-col">
+          <svg className="h-5 w-5 text-palette-black ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path
+              fillRule="evenodd"
+              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+              clipRule="evenodd"
+            />
+          </svg>
+          <p className="hidden group-hover:flex group-hover:flex absolute z-10 bg-palette-black border border-palette-yellow rounded mx-6 p-6 top-10 left-0 w-64 text-xs font-light">
+            {texts[language][1]}
+          </p>
+        </div>
+      </div>
       <div className="flex flex-col md:flex-row items-center md:space-x-2 space-y-5 md:space-y-0 md:h-64 mt-5">
         <div className="flex flex-row-reverse md:flex-col text-palette-yellow text-opacity-50 items-center w-full md:w-min h-full">
           <p2 className="rounded-full bg-palette-black border-2 border-palette-yellow border-opacity-50 px-2.5 py-1">

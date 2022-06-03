@@ -90,7 +90,7 @@ const images = [
 
 export default function Interests({ language }) {
   return (
-    <div className="flex flex-col md:flex-row justyfy-between items-center md:py-10 mr-5 md:mr-0">
+    <div className="flex flex-col md:flex-row justyfy-between items-center md:py-10 mr-5 md:mr-0 text-xs md:text-sm text-palette-grey-blue">
       {[0, 1, 2].map((element) => {
         return (
           <div
@@ -99,47 +99,28 @@ export default function Interests({ language }) {
           >
             <div className="flex flex-col space-y-2 group-hover:hidden items-center w-16 md:w-20">
               {getSvg(element)}
-              <p className="font-semibold text-sm md:text-base text-palette-grey-blue tarcking-wider">
+              <p className="font-semibold text-sm md:text-base tarcking-wider">
                 {InterestsList[language][element]["title"]}
               </p>
             </div>
-            <div className="flex flex-col flex-grow justify-center space-y-1 font-light tracking-wide h-52">
-              <div
-                className={
-                  "group flex-shrink hover:w-full hover:flex-grow flex items-center hover:items-start transition-all duration-500 ease-in-out " +
-                  images[element][0] +
-                  " bg-no-repeat bg-cover border border-palette-orange border-opacity-50 rounded px-4 " +
-                  margins[element][0]
-                }
-              >
-                <div className="text-xs md:text-sm text-palette-grey-blue group-hover:text-white group-hover:font-bold group-hover:bg-palette-orange transition-all duration-500 rounded group-hover:px-2 group-hover:py-0.5">
-                  {InterestsList[language][element]["list"][0]}
-                </div>
-              </div>
-              <div
-                className={
-                  "group flex-shrink hover:w-full hover:flex-grow flex items-center hover:items-start transition-all duration-500 ease-in-out " +
-                  images[element][1] +
-                  " bg-no-repeat bg-cover border border-palette-orange border-opacity-50 rounded px-4 " +
-                  margins[element][1]
-                }
-              >
-                <div className="text-xs md:text-sm text-palette-grey-blue group-hover:text-white group-hover:font-bold group-hover:bg-palette-orange transition-all duration-500 rounded group-hover:px-2 group-hover:py-0.5">
-                  {InterestsList[language][element]["list"][1]}
-                </div>
-              </div>
-              <div
-                className={
-                  "group flex-shrink hover:w-full hover:flex-grow flex items-center hover:items-start transition-all duration-500 ease-in-out " +
-                  images[element][2] +
-                  " bg-no-repeat bg-cover border border-palette-orange border-opacity-50 rounded px-4 " +
-                  margins[element][2]
-                }
-              >
-                <div className="text-xs md:text-sm text-palette-grey-blue group-hover:text-white group-hover:font-bold group-hover:bg-palette-orange transition-all duration-500 rounded group-hover:px-2 group-hover:py-0.5">
-                  {InterestsList[language][element]["list"][2]}
-                </div>
-              </div>
+            <div className="flex flex-col flex-grow justify-center space-y-1 font-light tracking-wide h-24 md:h-64 group-hover:h-64">
+              {[0, 1, 2].map((i) => {
+                return (
+                  <div
+                    key={element.toString() + i.toString()}
+                    className={
+                      "group flex-shrink hover:w-full group-hover:hover:flex-grow flex items-center hover:items-start transition-all duration-500 ease-in-out " +
+                      images[element][i] +
+                      " bg-cover border border-palette-orange border-opacity-50 rounded px-4 " +
+                      margins[element][i]
+                    }
+                  >
+                    <div className="group-hover:text-white group-hover:font-bold group-hover:bg-palette-orange transition-all duration-500 rounded group-hover:px-2 group-hover:py-0.5">
+                      {InterestsList[language][element]["list"][i]}
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         );

@@ -107,9 +107,6 @@ export default function Projects({ language }) {
               {projectsSlots[0].title}
               <br /> <p className="pb-4 pr-5">{projectsSlots[0]["description"][language]}</p>
             </h2>
-            <a className="action-btn-purple w-28" href="https://cryptowers.eth.link" rel={"nonreferrer"}>
-              {texts[language][1]}
-            </a>
           </div>
           <div className="absolute right-2 -top-2 rounded-full bg-palette-purple text-xs font-semibold px-4 py-1 text-palette-black transition transition-all duration-500 hover:bg-opacity-75 hover:ring-2 ring-opacity-50 ring-palette-purple">
             LIVE
@@ -119,9 +116,6 @@ export default function Projects({ language }) {
           {[1, 2, 3].map((e) => {
             return (
               <div
-                onClick={() => {
-                  openProjectModal(projectsSlots[e].title);
-                }}
                 key={e.toString()}
                 className="relative w-full max-w-sm md:max-w-none flex flex-row border border-palette-purple bottom-0.5 shadow cursor-pointer hover:shadow-xl rounded transition transition-all duration-500 hover:bg-palette-purple hover:bg-opacity-10 hover:ring-2 ring-opacity-50 ring-palette-purple"
               >
@@ -138,20 +132,13 @@ export default function Projects({ language }) {
                   <h2 className="text-xl leading-none font-extrabold">{projectsSlots[e].title}</h2>
                   <p className="text-xs">{projectsSlots[e]["description"][language]}</p>
                 </div>
-                <div className="absolute right-2 -bottom-3 rounded-full bg-palette-purple text-xs font-semibold px-4 py-1 text-palette-black transition transition-all duration-500 hover:bg-opacity-75 hover:ring-2 ring-opacity-50 ring-palette-purple">
+                <div className="absolute right-2 -bottom-3 rounded-full bg-palette-purple text-xs font-bold px-4 py-1 text-palette-black transition transition-all duration-500 hover:bg-opacity-75 hover:ring-2 ring-opacity-50 ring-palette-purple">
                   {projectsSlots[e]["timePeriod"][language]}
                 </div>
               </div>
             );
           })}
         </div>
-        {/* <div className="relative flex flex-col border border-palette-purple rounded py-4 px-8">
-            <h2 className="text-2xl font-extrabold">What’s next?</h2>
-            <form className="p-4" onSubmit={registerUser}>
-              <input className="w-full rounded border border-opacity-50 border-palette-purple bg-gray-800 bg-opacity-50 text-gray-500 px-4 focus:outline-none placeholder-gray-700 italic" placeholder="text me a project..." id="projectIdea" name="projectIdea" type="text" autoComplete="none" required />
-              <button className="absolute right-2 -bottom-3 rounded-full bg-palette-purple text-xs font-semibold px-6 py-1 text-palette-black" type="submit">Send</button>
-            </form>
-          </div> */}
       </div>
     </>
   );

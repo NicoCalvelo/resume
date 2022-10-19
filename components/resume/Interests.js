@@ -82,12 +82,6 @@ const getSvg = (n) => {
     );
 };
 
-const images = [
-  ["hover:bg-nature", "hover:bg-tech bg-bottom", "hover:bg-startup"],
-  ["hover:bg-french", "hover:bg-english bg-bottom", "hover:bg-spanish"],
-  ["hover:bg-tennis bg-center", "hover:bg-cycling bg-bottom", "hover:bg-basquet bg-center"],
-];
-
 export default function Interests({ language }) {
   return (
     <div className="flex flex-col md:flex-row justyfy-between items-center md:py-10 mr-5 md:mr-0 text-xs md:text-sm text-palette-grey-blue">
@@ -95,27 +89,24 @@ export default function Interests({ language }) {
         return (
           <div
             key={element.toString()}
-            className="group flex flex-row w-full md:w-2/6 space-x-2 items-center mx-6 justify-between"
+            className="flex flex-row w-full md:w-2/6 space-x-2 items-center mx-8 justify-between"
           >
-            <div className="flex flex-col space-y-2 group-hover:hidden items-center w-16 md:w-20">
+            <div className="flex flex-col space-y-2 items-center w-16 md:w-20">
               {getSvg(element)}
               <p className="font-semibold text-sm md:text-base tarcking-wider">
                 {InterestsList[language][element]["title"]}
               </p>
             </div>
-            <div className="flex flex-col flex-grow justify-center space-y-1 font-light tracking-wide h-24 md:h-64 group-hover:h-64">
+            <div className="flex flex-col flex-grow justify-center space-y-1 font-light tracking-wide h-24 md:h-64">
               {[0, 1, 2].map((i) => {
                 return (
                   <div
                     key={element.toString() + i.toString()}
                     className={
-                      "group flex-shrink hover:w-full group-hover:hover:flex-grow flex items-center hover:items-start transition-all duration-500 ease-in-out " +
-                      images[element][i] +
-                      " bg-cover border border-palette-orange border-opacity-50 rounded px-4 " +
-                      margins[element][i]
+                      "flex ml-6 items-center border border-palette-orange border-opacity-50 rounded px-4 "
                     }
                   >
-                    <div className="group-hover:text-white group-hover:font-bold group-hover:bg-palette-orange transition-all duration-500 rounded group-hover:px-2 group-hover:py-0.5">
+                    <div className="rounded">
                       {InterestsList[language][element]["list"][i]}
                     </div>
                   </div>

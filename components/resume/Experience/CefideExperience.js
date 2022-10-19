@@ -38,7 +38,12 @@ export default function CefideExperience({ language }) {
       <div className="absolute flex left-4 -top-4 items-center  bg-palette-yellow py-0.5   rounded-full px-4   ">
         <p className="text-xl tracking-wider font-bold text-palette-black">CEFiDe</p>
         <div className="group flex flex-col">
-          <svg className="h-5 w-5 text-palette-black ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <svg
+            className="h-5 w-5 text-palette-black ml-2"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
             <path
               fillRule="evenodd"
               d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
@@ -66,16 +71,6 @@ export default function CefideExperience({ language }) {
           {texts[language][0]}
         </div>
         <div id="experienceText" className="md:w-5/6 leading-snug md:px-2 space-y-1.5">
-          <p className="font-light text-xs pt-5 pb-1">{expTexts[language][0]}</p>
-          {expTexts[language].map((e) => {
-            if (expTexts[language].indexOf(e) != 0) {
-              return (
-                <p key={e.toString()} className="text-justify">
-                  {e}
-                </p>
-              );
-            }
-          })}
           <ul className="grid leading-snug pt-6 text-xs md:text-sm font-semibold md:font-bold md:tracking-wider gap-2 grid-cols-3">
             {frameworks.map((e) => {
               return (

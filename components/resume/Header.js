@@ -39,7 +39,6 @@ export default function Header({ language }) {
           </div>
         </div>
         <div className={styles.fadeIn}>
-          <p className="w-full pb-4 pr-5">{texts[language][2]}</p>
           <a
             href="https://drive.google.com/file/d/1WNBlAVMw6DmiBYXgGzJGvRs06Zsiu-v8/view?usp=sharing"
             target="_blank"

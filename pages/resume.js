@@ -1,15 +1,15 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import AboutMe from "../components/home/AboutMe";
-import Contact from "../components/home/Contact";
-import Experience from "../components/home/Experience/Experience";
-import Header from "../components/home/Header";
-import Interests from "../components/home/Interests";
-import Language from "../components/home/Language";
-import Projects from "../components/home/Projects/Projects";
+import AboutMe from "../components/resume/AboutMe";
+import Contact from "../components/resume/Contact";
+import Experience from "../components/resume/Experience/Experience";
+import Header from "../components/resume/Header";
+import Interests from "../components/resume/Interests";
+import Language from "../components/resume/Language";
+import Projects from "../components/resume/Projects/Projects";
 import NavBar from "../components/Navbar";
 import SocailSideBar from "../components/SocialSideBar";
-import ProjectModal from "../components/home/Modals/projectModal";
+import ProjectModal from "../components/resume/Modals/projectModal";
 
 const siteTitle = "Resume @nico.calvelo";
 
@@ -62,7 +62,7 @@ export default function Resume() {
         <meta name="twitter:card" content="summary_large_image" />
         <title>{siteTitle}</title>
       </Head>
-      <main id="main" className="relative mx-auto md:pl-16 md:pr-6 max-w-6xl text-palette-grey-blue space-y-16">
+      <main id="main" className="relative mx-auto md:pl-16 md:pr-6 max-w-6xl text-palette-grey-blue space-y-10 md:space-y-16">
         <NavBar language={language} color={color} />
         <Language
           language={language}

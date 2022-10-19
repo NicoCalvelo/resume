@@ -5,23 +5,20 @@ import styles from "./about.module.scss";
 const texts = {
   English: [
     "About me",
-    `I was born in Argentina in 2002. I am passionate about nature, sport, start-ups and the technology industry. I consider myself a simple and calm person, dedicated and ambitious. I hope to be able to convey my learning and my values throughout this page.`,
+    `I was born in Argentina in 2002. I am passionate about nature, sport, start-ups and the technology industry. I consider myself a simple and calm person, dedicated and ambitious.`,
     `At the age of 16, I started programming and creating my own video games and apps. Driven by my curiosity, I wanted to understand what was going on behind these screens. Without dreaming, years later I would find myself immersed in all that working in a start-up.`,
-    `At the end of my 17 years, I went to live alone in the south of my country. The famous Argentine Patagonia.  There I began my two years of studies in administration and my participation in the world of work. Different experiences, learnings, disappointments and joys, with emotions intensified in a context of pandemic. Certainly a great growth both personal and professional that gave me what it took to face this next step.`,
     `I currently live in Decazeville, France. With the intention of learning language, culture and integrating into society. Also with the aim of continuing my studies and continue enriching my professional career with new and challenging experiences.`,
   ],
   Spanish: [
     "Sobre mi",
-    `Nací en Argentina en 2002. Me apasionan la naturaleza, el deporte, las start-ups y la industria tecnológica. Me considero una persona sencilla y tranquila, dedicada y ambiciosa. Espero poder transmitir mi aprendizaje y mis valores a lo largo de esta página.`,
+    `Nací en Argentina en 2002. Me apasionan la naturaleza, el deporte, las start-ups y la industria tecnológica. Me considero una persona sencilla y tranquila, dedicada y ambiciosa.`,
     `A la edad de 16 años, empecé a programar y crear mis propios videojuegos y aplicaciones. Impulsado por mi curiosidad, quería entender lo que estaba sucediendo detrás de estas pantallas. Sin planearlo, años más tarde me encontraría totalmente inmerso en ese mundo.`,
-    `Al final de mis 17 años, fui a vivir solo al sur de mi país. La conocida Patagonia argentina.  Allí comencé mis dos años de estudios en administración y mis participaciones en emprendimientos. Diferentes experiencias, aprendizajes, decepciones y alegrías, con emociones intensificadas en un contexto de pandemia. Sin duda un gran crecimiento tanto personal como profesional que me dio lo necesario para hacer frente a las siguientes etapas en mi vida.`,
     `Actualmente vivo en Aveyron, Francia. Con la intención de aprender el idioma, la cultura e integrarme en la dinamica local. Con la mente puesta en continuar mis estudios y seguir enriqueciendo mi carrera profesional con nuevas y desafiantes experiencias.`,
   ],
     French: [
     "Sur moi",
     `Fortement attiré par l’industrie technologique, l'innovation et les start-up, je sais apprécier les défis complexes, avec des enjeux divers. Originaire d'Argentine, j'apprécie grandement la nature, le sport et les activités en plein air. Étant calme et simple dans la vie quotidienne, je garde un esprit critique sur mon travail et mes objectifs.`,
     `A l'âge de 16 ans, j’ai commencé à travailler sur mes compétences en programmation en tant qu’autodidacte. Ce qui m’a permis de créer mes premiers jeux et applications. Ce contact avec la technologie a tissé ma curiosité, en me poussant vers une compréhension plus approfondie de cet univers.`,
-    `En 2020 je suis partie vivre en Patagonie, ou j’ai réalisé mes deux ans d'études en administration et mes premières expériences professionnelles. J’ai vécu deux ans très riches en émotions et travail, accentuées par un contexte mondial unique en raison du Covid-19. Sans doute une grande expérience, qui m'a donné les outils nécessaires pour aborder de nouveaux défis dans ma vie.`,
     `Avec la ferme intention de poursuivre le développement de mon apprentissage, et souhaitant enrichir mon parcours professionnel. Je recherche actuellement une entreprise qui sache m'accompagner dans mon projet d'apprentissage.`,
   ],
  };

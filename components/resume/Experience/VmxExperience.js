@@ -24,56 +24,6 @@ const frameworks = [
   ["Javascript", "React", "Next.js", "PHP Basics", "Firebase", "Database", "Analytics", "Auth", "Payments - Stripe"],
 ];
 
-const expTexts = {
-  English: [
-    [
-      "August 2021 - December 2021",
-      `Working as a product manager has been an intense and rewarding experience.`,
-      `My daily job was to coordinate a team of four people, to carry out the product development on UX/UI, back and front. All in direct contact with the marketing team and management.`,
-    ],
-    [
-      "September 2020 - May 2021",
-      `When I joined Voicemix, I faced the big challenge of making users understand the innovative tool we were building. This led me to research about UX/UI, to pay attention to the smallest details and discover a world that went beyond the beautiful presentation of some texts and buttons.`,
-      `If something was confusing, we were likely to lose customers.`,
-    ],
-    [
-      "June 2020 - August. 2021",
-      `I have learned everything necessary to build a fully functional web app. Without a doubt the back-end is the area I master the most.`,
-    ],
-  ],
-  Spanish: [
-    [
-      "Agosto 2021 - Diciembre 2021",
-      `Trabajar como gerente de producto ha sido una experiencia intensa y gratificante.`,
-      `Mi trabajo diario consistía en coordinar un equipo de cuatro personas para llevar a cabo el desarrollo del producto en UX/UI, back y front. Todo ello en relación directa con el equipo de marketing y la dirección.`,
-    ],
-    [
-      "Septiembre 2020 - Mayo 2021",
-      `Cuando entré en Voicemix, me enfrenté al gran desafío de hacer que los usuarios entiendan la herramienta innovadora que estábamos construyendo. Esto me llevó a investigar sobre UX/UI, a prestar atención a los detalles más pequeños y descubrir un mundo que iba más allá de presentar de forma bonita algunos textos y botones.`,
-      `Si algo se prestaba a confusión, era muy probable que perdiéramos clientes.`,
-    ],
-    [
-      "Junio 2020 - Agosto 2021",
-      `He aprendido todo lo necesario para construir una app web completamente funcional. Sin duda el back-end es el area que mas domino.`,
-    ],
-  ],
-  French: [
-    [
-      "Août 2021 - Décembre 2021",
-      `Travailler comme chef de produit a été une expérience intense et enrichissante.`,
-      `Mon travail quotidien consistait à coordonner un équipe de quatre personnes, pour mener à bien le développement du produit sur UX/UI, back et front. Le tout, en relation directe avec l’équipe marketing et la direction.`,
-    ],
-    [
-      "Septembre 2020 - Mai 2021",
-      `De mon entrée à VoiceMix, j’ai travaillé pour montrer l’outil innovant que nous étions en train de développer aux futurs utilisateurs. Cela m’a conduit à faire des recherches sur le UX/UI, à prêter attention aux plus petits détails et à découvrir un monde qui allait au-delà de la présentation de quelques textes et boutons.`,
-      `Si quelque chose prêtait à confusion, il était très probable que nous perdions des clients.`,
-    ],
-    [
-      "Juin 2020 - Août 2021",
-      `Grâce au travail effectué sur VoiceMix, j'ai pu développer les compétences nécessaires pour construire une application web entièrement fonctionnelle. Le back-end est sans aucun doute le domaine d'activité que je maîtrise le mieux à ce jour.`,
-    ],
-  ],
-};
 
 export default function VmxExperience({ language }) {
   const [selected, setSelected] = useState(0);
@@ -115,8 +65,8 @@ export default function VmxExperience({ language }) {
                 (selected == 0
                   ? "right-1 left-36 md:right-0 md:left-0 md:top-1.5 md:bottom-48"
                   : selected == 1
-                  ? "right-14 left-16 md:right-0 md:left-0 md:top-16 md:bottom-16"
-                  : "right-10 left-12 md:right-0 md:left-0 md:top-12 md:bottom-12")
+                  ? "right-8 left-16 md:right-0 md:left-0 md:top-16 md:bottom-16"
+                  : "right-10 left-8 md:right-0 md:left-0 md:top-12 md:bottom-12")
               }
             />
           </div>
@@ -145,16 +95,6 @@ export default function VmxExperience({ language }) {
           })}
         </ul>
         <div id="experienceText" className="md:w-5/6 leading-snug md:px-2 space-y-1.5">
-          <p className="font-light text-xs pt-5 pb-1">{expTexts[language][selected][0]}</p>
-          {expTexts[language][selected].map((e) => {
-            if (expTexts[language][selected].indexOf(e) != 0) {
-              return (
-                <p key={e} className="text-justify">
-                  {e}
-                </p>
-              );
-            }
-          })}
           <ul className="grid leading-snug pt-6 text-xs md:text-sm font-semibold md:font-bold md:tracking-wider gap-2 grid-cols-3">
             {frameworks[selected].map((e) => {
               return (

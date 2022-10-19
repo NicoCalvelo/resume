@@ -1,10 +1,10 @@
 import Head from "next/head";
 import NavBar from "../components/Navbar";
+import styles from "../components/resume/header.module.scss";
 
 const siteTitle = "@nico.calvelo";
 
 export default function Home() {
-  
   return (
     <>
       <Head>
@@ -17,7 +17,13 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <title>{siteTitle}</title>
       </Head>
-      <main id="main" className="relative mx-auto md:pl-16 md:pr-6 max-w-6xl text-palette-grey-blue space-y-16"></main>
+      <main id="main" className="relative mx-auto md:pl-16 md:pr-6 max-w-6xl text-palette-grey-blue space-y-16">
+        <div className="mx-auto w-min h-64 flex items-center">
+          <a href="/resume" rel="noreferrer" className="action-btn-green whitespace-nowrap">
+            See resume
+          </a>
+        </div>
+      </main>
     </>
   );
 }

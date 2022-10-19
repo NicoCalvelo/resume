@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import styles from "./projects.module.scss";
 import Image from "next/image";
-import { openProjectModal } from "../Modals/projectModal";
 
 const texts = {
   English: ["Projects", "See more"],

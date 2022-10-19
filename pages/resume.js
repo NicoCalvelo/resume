@@ -9,7 +9,6 @@ import Language from "../components/resume/Language";
 import Projects from "../components/resume/Projects/Projects";
 import NavBar from "../components/Navbar";
 import SocailSideBar from "../components/SocialSideBar";
-import ProjectModal from "../components/resume/Modals/projectModal";
 
 const siteTitle = "Resume @nico.calvelo";
 
@@ -79,7 +78,6 @@ export default function Resume() {
         <Contact language={language} />
         <SocailSideBar color={color} />
       </main>
-      <ProjectModal language={language} />
     </>
   );
 }

@@ -9,7 +9,7 @@ const texts = {
   French: ["Expérience"],
 };
 
-export default function Experience({ language }) {
+export default function Experience({ language ="English" }) {
   const [selected, setSelected] = useState(0);
 
   useEffect(() => {
@@ -34,7 +34,7 @@ export default function Experience({ language }) {
 
   return (
     <>
-      <div className="h-14 md:h-28 w-full"></div>
+      <div className="h-14 md:h-28 w-screen h-screen"></div>
       <div id="yellow" className="flex-col space-y-10 md:px-4">
         <div id="h3yellow" className="flex flex-row items-center space-x-1 md:space-x-4">
           <div className="h-0.25 flex-grow bg-palette-yellow" />

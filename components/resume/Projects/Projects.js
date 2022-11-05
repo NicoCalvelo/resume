@@ -65,7 +65,7 @@ const projectsSlots = [
   },
 ];
 
-export default function Projects({ language }) {
+export default function Projects({ language= "English" }) {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       // Loop over the entries

@@ -82,9 +82,9 @@ const getSvg = (n) => {
     );
 };
 
-export default function Interests({ language }) {
+export default function Interests({ language= "English" }) {
   return (
-    <div className="flex flex-col md:flex-row justyfy-between items-center md:py-10 mr-5 md:mr-0 text-xs md:text-sm text-palette-grey-blue">
+    <div className="flex flex-col md:flex-row justyfy-between items-center md:py-10 mr-5 md:mr-0 text-xs md:text-sm text-palette-grey-blue w-screen h-screen">
       {[0, 1, 2].map((element) => {
         return (
           <div

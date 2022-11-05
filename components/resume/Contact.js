@@ -7,7 +7,7 @@ const texts = {
   French: ["Contact", "Conçu et construit par Nicolás Calvelo"],
 };
 
-export default function Contact({ language }) {
+export default function Contact({ language= "English" }) {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       // Loop over the entries

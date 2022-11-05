@@ -33,7 +33,7 @@ export default function SocailSideBar({ language, color }) {
         />
       </svg>
       </a>
-      <div className={"hidden sm:block h-32 w-0.25 transition-all duration-500 " + (color =='#2FEB98' ?'bg-palette-green' : color =='#EB784B' ?'bg-palette-orange' :color=='#FFEC40' ?'bg-palette-yellow' : color=='#EB2FA0' ?'bg-palette-purple' :'bg-palette-grey')} />
+      <div className={"hidden sm:block h-24 w-0.25 transition-all duration-500 " + (color =='#2FEB98' ?'bg-palette-green' : color =='#EB784B' ?'bg-palette-orange' :color=='#FFEC40' ?'bg-palette-yellow' : color=='#EB2FA0' ?'bg-palette-purple' :'bg-palette-grey')} />
     </div>
   );
 }

@@ -7,8 +7,7 @@
 body {
   display: block;
   width: auto;
-  margin: 15px;
-  background-color: #2a353e;
+  background-color: #1F2937;
   font-weight: 400;
   font-family: Livvic, Inter, sans-serif;
   line-height: 1.6;
@@ -27,15 +26,10 @@ a:hover {
   cursor: pointer;
 }
 
-textbtn:hover {
-  cursor: pointer;
-  text-decoration: underline;
+::-webkit-scrollbar {
+  display: none;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
 h1 {
   font-family: Livvic;
   font-size: 48px;
@@ -44,20 +38,9 @@ h1 {
 h2 {
   font-family: Livvic;
   font-size: 36px;
-  line-height: 90%;
   font-weight: 700;
 }
 h3 {
-  font-family: Livvic;
-  font-size: 64px;
-  font-weight: 700;
-  vertical-align: middle;
-  padding-inline: 2px;
-  color: #2a353e;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-}
-h4 {
   font-family: Livvic;
   font-size: 24px;
   font-weight: 600;
@@ -68,11 +51,6 @@ p {
   font-weight: 400;
   line-height: 130%;
 }
-p2 {
-  font-family: Livvic;
-  font-size: 10px;
-  font-weight: 300;
-}
 
 @media (max-width: 768px) {
   h1 {
@@ -80,10 +58,9 @@ p2 {
   }
   h2 {
     font-size: 28px;
-    line-height: 120%;
   }
   h3 {
-    font-size: 38px;
+    font-size: 20px;
     letter-spacing: 3px;
   }
   p {

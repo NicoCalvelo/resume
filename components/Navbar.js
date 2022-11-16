@@ -2,11 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./navBar.module.scss";
 import { useEffect, useState } from "react";
-
+//
 export default function NavBar({ color }) {
   return (
     <div className="max-w-6xl mx-auto">
-      <nav className="fixed shadow-xl bg-palette-black top-4 z-50 transition-all ease-in-out duration-500 delay-300 py-3 rounded-full flex flex-row space-x-20 px-6">
+      <nav
+        style={{ border: "1px solid " + color }}
+        className={
+          "fixed shadow-xl bg-palette-black top-4 z-50 transition-all ease-in-out duration-500 delay-300 py-3 rounded-full flex flex-row space-x-20 px-6"
+        }
+      >
         <Link href="/" passHref>
           <svg
             className="cursor-pointer"

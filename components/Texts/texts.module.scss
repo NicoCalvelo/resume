@@ -1,8 +1,7 @@
 .reveal {
     overflow-x: hidden;
-    position: relative;
+    position: block;
     animation-name: reveal-text;
-    text-shadow: -1px -1px 0 #EB784B, 1px -1px 0 #EB784B, -1px 1px 0 #EB784B, 1px 1px 0 #EB784B;
   
     &:after {
       content: "";
@@ -27,7 +26,7 @@
       animation-fill-mode: both;
       animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
     } &:after {
-        background-color: #EB784B;
+        background-color: currentColor;
       }
      
   }

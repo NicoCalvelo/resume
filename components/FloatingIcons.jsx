@@ -22,8 +22,8 @@ export default function FloatingIcons({}) {
         strokeWidth={1.5}
         stroke="currentColor"
         style={{
-          top: 260 - scrollPosition * 40 + "px",
-          left: 160 - 20 * scrollPosition + "px",
+          top: 200 - scrollPosition * 40 + "px",
+          left: 140 - 20 * scrollPosition + "px",
           width: 70 + 14 * scrollPosition + "px",
         }}
         className="absolute transition-all animate-pulse"

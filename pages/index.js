@@ -1,14 +1,12 @@
 import Head from "next/head";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import FloatingIcons from "../components/FloatingIcons";
+import FloatingIcons from "../components/landing/FloatingIcons";
 import NavBar from "../components/Navbar";
-import AboutMe from "../components/resume/AboutMe";
+import WebPages from "../components/landing/WebPages";
 import Contact from "../components/resume/Contact";
 import Experience from "../components/resume/Experience/Experience";
 import Header from "../components/resume/Header";
-import styles from "../components/resume/header.module.scss";
-import Interests from "../components/resume/Interests";
 import Projects from "../components/resume/Projects/Projects";
 import SocailSideBar from "../components/SocialSideBar";
 
@@ -50,19 +48,25 @@ export default function Home() {
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="og:title" content={siteTitle} />
-        <meta name="description" content="Welcome to my web page! See my resume and learn about me." />
+        <meta
+          name="description"
+          content="Welcome to my web page! See my resume and learn about me."
+        />
         <meta name="keywords" content="Nicolas, Calvelo" />
         <meta name="author" content="Nico Calvelo"></meta>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="twitter:card" content="summary_large_image" />
         <title>{siteTitle}</title>
       </Head>
-      <main id="main" className="fixed text-palette-grey-blue overflow-y-scroll w-full h-screen ">
+      <main
+        id="main"
+        className="fixed text-palette-grey-blue overflow-y-scroll w-full h-screen "
+      >
         <Header />
         <FloatingIcons />
         <div style={{ zIndex: "40" }} className="relative bg-palette-black">
           <NavBar color={color} />
-          <AboutMe />
+          <WebPages />
           <Experience />
           <Projects />
           <Contact />

@@ -38,7 +38,7 @@ export function AppearTitle({
       <div
         style={{ color: color }}
         id={id}
-        className="flex flex-row items-center space-x-4 px-4"
+        className="flex flex-row items-center space-x-4"
       >
         {leftLine && (
           <div

@@ -45,9 +45,9 @@ h3 {
   font-size: 24px;
   font-weight: 600;
 }
-p {
+p, button {
   font-family: Inter;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 130%;
 }
@@ -91,6 +91,20 @@ p {
   font-family: "Inter";
   src: url("../public/fonts/Inter-Regular.ttf") format("truetype");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../public/fonts/Inter-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../public/fonts/Inter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
   font-style: normal;
 }
 

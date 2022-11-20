@@ -9,7 +9,7 @@ export default function NavBar({ color }) {
       <nav
         style={{ border: "1px solid " + color }}
         className={
-          "fixed shadow-xl bg-palette-black top-4 z-50 transition-all ease-in-out duration-500 delay-300 py-3 rounded-full flex flex-row space-x-20 px-6"
+          "fixed shadow-xl backdrop-blur-lg top-4 z-50 transition-all ease-in-out duration-500 delay-300 py-3 rounded-full flex flex-row space-x-20 px-6"
         }
       >
         <Link href="/" passHref>

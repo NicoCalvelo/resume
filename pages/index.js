@@ -2,13 +2,13 @@ import Head from "next/head";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import FloatingIcons from "../components/landing/FloatingIcons";
-import NavBar from "../components/Navbar";
+import NavBar from "../components/Navbar.jsx";
 import WebPages from "../components/landing/WebPages";
 import Contact from "../components/resume/Contact";
 import Experience from "../components/resume/Experience/Experience";
 import Header from "../components/resume/Header";
 import Projects from "../components/resume/Projects/Projects";
-import SocailSideBar from "../components/SocialSideBar";
+import SocailSideBar from "../components/SocialSideBar.jsx";
 
 const siteTitle = "@nico.calvelo";
 

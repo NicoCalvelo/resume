@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { AppearTitle } from "../Texts/Texts";
+import { AppearTitle } from "../texts/Titles";
 
 const texts = {
   English: ["Contact", "Designed & Built by Nicolás Calvelo"],
